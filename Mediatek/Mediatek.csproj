@@ -89,6 +89,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="connexion\" />
     <Folder Include="controleur\" />
     <Folder Include="dal\" />
     <Folder Include="modele\" />
