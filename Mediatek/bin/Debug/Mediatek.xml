@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mediatek</name>
+    </assembly>
+    <members>
+        <member name="T:MediaTek.connexion.ConnexionBDD">
+            <summary>
+            Connexion à la base de données et exécution des requêtes
+            </summary>
+        </member>
+        <member name="F:MediaTek.connexion.ConnexionBDD.connection">
+            <summary>
+            Objet de connexion à la BDD à partir d'une chaîne de connexion
+            </summary>
+        </member>
+        <member name="M:MediaTek.connexion.ConnexionBDD.#ctor(System.String)">
+            <summary>
+            Constructeur privé pour créer la connexion à la BDD et l'ouvrir
+            </summary>
+            <param name="stringConnect">chaîne de connexion</param>
+        </member>
+        <member name="F:MediaTek.connexion.ConnexionBDD.instance">
+            <summary>
+            Unique instance de la classe
+            </summary>
+        </member>
+        <member name="M:MediaTek.connexion.ConnexionBDD.GetInstance(System.String)">
+            <summary>
+            Crée une instance unique de la classe
+            </summary>
+            <param name="stringConnect">chaine de connexion</param>
+            <returns>instance unique de la classe</returns>
+        </member>
+        <member name="F:MediaTek.connexion.ConnexionBDD.command">
+            <summary>
+            Objet pour exécuter une requête SQL
+            </summary>
+        </member>
+        <member name="M:MediaTek.connexion.ConnexionBDD.ReqUpdate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Exécuter une requête autre que "SELECT"
+            </summary>
+            <param name="stringQuery">requête autre que "SELECT"</param>
+            <param name="parameters"></param>
+        </member>
+        <member name="F:MediaTek.connexion.ConnexionBDD.reader">
+            <summary>
+            Curseur objet
+            </summary>
+        </member>
+        <member name="M:MediaTek.connexion.ConnexionBDD.ReqSelect(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
+            <summary>
+            Exécution d'une requête type "SELECT" et valorisation du curseur
+            </summary>
+            <param name="stringQuery">requête "SELECT"</param>
+            <param name="parameters"></param>
+        </member>
+        <member name="M:MediaTek.connexion.ConnexionBDD.Read">
+            <summary>
+            Tente de lire la ligne suivante du curseur
+            </summary>
+            <returns>false si la fin du curseur est atteint</returns>
+        </member>
+        <member name="M:MediaTek.connexion.ConnexionBDD.Field(System.String)">
+            <summary>
+            Retourne le contenu d'un champ dont le nom est passé en paramètre
+            </summary>
+            <param name="nameField">nom du champs</param>
+            <returns>valeur du champ</returns>
+        </member>
+        <member name="M:MediaTek.connexion.ConnexionBDD.Close">
+            <summary>
+            Fermeture du curseur
+            </summary>
+        </member>
+        <member name="F:Mediatek.dal.AccesDonnees.connectionString">
+            <summary>
+            Chaine de connexion à la BDD
+            </summary>
+        </member>
+        <member name="F:Mediatek.frmGestionPersonnel.components">
+            <summary>
+            Variable nécessaire au concepteur.
+            </summary>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.Dispose(System.Boolean)">
+            <summary>
+            Nettoyage des ressources utilisées.
+            </summary>
+            <param name="disposing">true si les ressources managées doivent être supprimées ; sinon, false.</param>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.InitializeComponent">
+            <summary>
+            Méthode requise pour la prise en charge du concepteur - ne modifiez pas
+            le contenu de cette méthode avec l'éditeur de code.
+            </summary>
+        </member>
+        <member name="M:Mediatek.Program.Main">
+            <summary>
+            Point d'entrée principal de l'application.
+            </summary>
+        </member>
+        <member name="F:Mediatek.vue.frmLogin.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Mediatek.vue.frmLogin.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Mediatek.vue.frmLogin.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Mediatek.Properties.Resources">
+            <summary>
+              Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+            </summary>
+        </member>
+        <member name="P:Mediatek.Properties.Resources.ResourceManager">
+            <summary>
+              Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+            </summary>
+        </member>
+        <member name="P:Mediatek.Properties.Resources.Culture">
+            <summary>
+              Remplace la propriété CurrentUICulture du thread actuel pour toutes
+              les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+    </members>
+</doc>
