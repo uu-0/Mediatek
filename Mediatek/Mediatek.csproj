@@ -72,6 +72,9 @@
     <EmbeddedResource Include="vue\frmGestionPersonnel.resx">
       <DependentUpon>frmGestionPersonnel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="vue\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
