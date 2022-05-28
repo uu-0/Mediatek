@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediatek", "Mediatek\Mediatek.csproj", "{CA5B35C1-FFAC-4524-A59F-75CE4297E410}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA5B35C1-FFAC-4524-A59F-75CE4297E410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA5B35C1-FFAC-4524-A59F-75CE4297E410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA5B35C1-FFAC-4524-A59F-75CE4297E410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA5B35C1-FFAC-4524-A59F-75CE4297E410}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6F421147-9D94-46A7-BAC8-D890D477E3AC}
+	EndGlobalSection
+EndGlobal

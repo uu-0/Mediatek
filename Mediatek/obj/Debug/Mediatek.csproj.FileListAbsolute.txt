@@ -1,0 +1,9 @@
+C:\MediatekMaster\Mediatek\Mediatek\bin\Debug\Mediatek.exe.config
+C:\MediatekMaster\Mediatek\Mediatek\bin\Debug\Mediatek.exe
+C:\MediatekMaster\Mediatek\Mediatek\bin\Debug\Mediatek.pdb
+C:\MediatekMaster\Mediatek\Mediatek\obj\Debug\Mediatek.csproj.AssemblyReference.cache
+C:\MediatekMaster\Mediatek\Mediatek\obj\Debug\Mediatek.Properties.Resources.resources
+C:\MediatekMaster\Mediatek\Mediatek\obj\Debug\Mediatek.csproj.GenerateResource.cache
+C:\MediatekMaster\Mediatek\Mediatek\obj\Debug\Mediatek.csproj.CoreCompileInputs.cache
+C:\MediatekMaster\Mediatek\Mediatek\obj\Debug\Mediatek.exe
+C:\MediatekMaster\Mediatek\Mediatek\obj\Debug\Mediatek.pdb

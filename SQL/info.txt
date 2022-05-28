@@ -1,0 +1,8 @@
+BDD: login: admin, mdp: P@$$word
+responsable: login:mediatekadmin, mdp: P@$$word (chiffré avec SHA2)
+
+
+à supp après
+bin\Debug\
+
+Mediatek\Mediatek\Mediatek\bin\Debug\

@@ -1,0 +1,70 @@
+# -----------------------------------------------------------------------------
+#       TABLE : absence
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS absence
+ (
+   idpersonnel INTEGER NOT NULL  ,
+   datedebut DATETIME NOT NULL  ,
+   idmotif INTEGER NOT NULL  ,
+   datefin DATETIME NULL  
+   , PRIMARY KEY (idpersonnel,datedebut) 
+ ) 
+ENGINE=InnoDB;
+# -----------------------------------------------------------------------------
+#       TABLE : motif
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS motif
+ (
+   idmotif INTEGER NOT NULL AUTO_INCREMENT ,
+   libelle VARCHAR(128) NULL  
+   , PRIMARY KEY (idmotif) 
+ ) 
+ENGINE=InnoDB;
+# -----------------------------------------------------------------------------
+#       TABLE : service
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS service
+ (
+   idservice INTEGER NOT NULL AUTO_INCREMENT ,
+   nom VARCHAR(50) NULL  
+   , PRIMARY KEY (idservice) 
+ ) 
+ENGINE=InnoDB;
+# -----------------------------------------------------------------------------
+#       TABLE : personnel
+# -----------------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS personnel
+ (
+   idpersonnel INTEGER NOT NULL AUTO_INCREMENT ,
+   idservice INTEGER NOT NULL  ,
+   nom VARCHAR(50) NULL  ,
+   prenom VARCHAR(50) NULL  ,
+   tel VARCHAR(15) NULL  ,
+   mail VARCHAR(128) NULL  
+   , PRIMARY KEY (idpersonnel) 
+ ) 
+ENGINE=InnoDB;
+
+# -----------------------------------------------------------------------------
+#       CREATION DES REFERENCES DE TABLE
+# -----------------------------------------------------------------------------
+
+
+ALTER TABLE absence 
+  ADD FOREIGN KEY FK_absence_motif (idmotif)
+      REFERENCES motif (idmotif) ;
+
+
+ALTER TABLE absence 
+  ADD FOREIGN KEY FK_absence_personnel (idpersonnel)
+      REFERENCES personnel (idpersonnel) ;
+
+
+ALTER TABLE personnel 
+  ADD FOREIGN KEY FK_personnel_service (idservice)
+      REFERENCES service (idservice) ;
+
