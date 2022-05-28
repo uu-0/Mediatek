@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="connexion\ConnexionBDD.cs" />
     <Compile Include="vue\frmGestionPersonnel.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,7 +90,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="connexion\" />
     <Folder Include="controleur\" />
     <Folder Include="dal\" />
     <Folder Include="modele\" />
