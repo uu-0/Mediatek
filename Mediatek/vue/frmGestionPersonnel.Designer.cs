@@ -62,12 +62,12 @@ namespace Mediatek
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.grpBtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lstPersonnel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lstAbs)).BeginInit();
             this.grpSaisie.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbGestion
@@ -288,11 +288,12 @@ namespace Mediatek
             // 
             this.lstAbs.BackgroundColor = System.Drawing.Color.White;
             this.lstAbs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.lstAbs.Location = new System.Drawing.Point(560, 72);
+            this.lstAbs.Location = new System.Drawing.Point(81, 17);
             this.lstAbs.Name = "lstAbs";
-            this.lstAbs.Size = new System.Drawing.Size(258, 498);
+            this.lstAbs.Size = new System.Drawing.Size(258, 465);
             this.lstAbs.TabIndex = 20;
             this.lstAbs.Visible = false;
+            this.lstAbs.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.lstAbs_CellContentClick);
             this.lstAbs.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.lstAbs_CellEnter);
             // 
             // grpSaisie
@@ -327,7 +328,7 @@ namespace Mediatek
             this.cboBoxMotif.FormattingEnabled = true;
             this.cboBoxMotif.Location = new System.Drawing.Point(25, 150);
             this.cboBoxMotif.Name = "cboBoxMotif";
-            this.cboBoxMotif.Size = new System.Drawing.Size(295, 21);
+            this.cboBoxMotif.Size = new System.Drawing.Size(298, 21);
             this.cboBoxMotif.TabIndex = 23;
             this.cboBoxMotif.Visible = false;
             // 
@@ -344,11 +345,11 @@ namespace Mediatek
             // 
             // dateTimeFin
             // 
-            this.dateTimeFin.Location = new System.Drawing.Point(26, 99);
+            this.dateTimeFin.Location = new System.Drawing.Point(25, 99);
             this.dateTimeFin.MaxDate = new System.DateTime(2100, 1, 1, 0, 0, 0, 0);
             this.dateTimeFin.MinDate = new System.DateTime(2000, 5, 29, 0, 0, 0, 0);
             this.dateTimeFin.Name = "dateTimeFin";
-            this.dateTimeFin.Size = new System.Drawing.Size(297, 20);
+            this.dateTimeFin.Size = new System.Drawing.Size(298, 20);
             this.dateTimeFin.TabIndex = 22;
             this.dateTimeFin.Value = new System.DateTime(2022, 5, 29, 0, 0, 0, 0);
             this.dateTimeFin.Visible = false;
@@ -370,7 +371,7 @@ namespace Mediatek
             this.dateTimeDebut.MaxDate = new System.DateTime(2100, 1, 1, 0, 0, 0, 0);
             this.dateTimeDebut.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dateTimeDebut.Name = "dateTimeDebut";
-            this.dateTimeDebut.Size = new System.Drawing.Size(294, 20);
+            this.dateTimeDebut.Size = new System.Drawing.Size(297, 20);
             this.dateTimeDebut.TabIndex = 21;
             this.dateTimeDebut.Value = new System.DateTime(2022, 5, 29, 0, 0, 0, 0);
             this.dateTimeDebut.Visible = false;
@@ -395,7 +396,7 @@ namespace Mediatek
             this.btnRef.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.btnRef.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.btnRef.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRef.Location = new System.Drawing.Point(284, 209);
+            this.btnRef.Location = new System.Drawing.Point(287, 204);
             this.btnRef.Name = "btnRef";
             this.btnRef.Size = new System.Drawing.Size(36, 38);
             this.btnRef.TabIndex = 24;
@@ -421,33 +422,24 @@ namespace Mediatek
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Teal;
-            this.panel3.Location = new System.Drawing.Point(477, 73);
+            this.panel3.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel3.Controls.Add(this.lstAbs);
+            this.panel3.Location = new System.Drawing.Point(473, 72);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(5, 497);
+            this.panel3.Size = new System.Drawing.Size(411, 496);
             this.panel3.TabIndex = 23;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Teal;
-            this.panel4.Location = new System.Drawing.Point(885, 72);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(5, 497);
-            this.panel4.TabIndex = 24;
             // 
             // frmGestionPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(960, 588);
-            this.Controls.Add(this.lstAbs);
             this.Controls.Add(this.lstPersonnel);
             this.Controls.Add(this.grpBtn);
             this.Controls.Add(this.grpSaisie);
             this.Controls.Add(this.lbGestion);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGestionPersonnel";
@@ -459,6 +451,7 @@ namespace Mediatek
             this.grpSaisie.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -496,7 +489,6 @@ namespace Mediatek
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel4;
     }
 }
 
