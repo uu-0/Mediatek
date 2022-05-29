@@ -543,9 +543,14 @@
             Objet pour gérer la liste des absences
             </summary>
         </member>
-        <member name="F:Mediatek.frmGestionPersonnel.bdgMotifs">
+        <member name="F:Mediatek.frmGestionPersonnel.bdgMotif">
             <summary>
             Objet pour gérer la liste des motifs
+            </summary>
+        </member>
+        <member name="F:Mediatek.frmGestionPersonnel.show">
+            <summary>
+            Booléen pour déterminer l'affichage de gestion du personnel ou des absences
             </summary>
         </member>
         <member name="M:Mediatek.frmGestionPersonnel.#ctor(MediaTek.controleur.Controle)">
@@ -560,6 +565,12 @@
             Initialisation de la frame : remplissage des listes
             </summary>
         </member>
+        <member name="M:Mediatek.frmGestionPersonnel.ShowComponents(System.Boolean)">
+            <summary>
+            Affiche/Cache les composants graphiques
+            </summary>
+            <param name="show"></param>
+        </member>
         <member name="M:Mediatek.frmGestionPersonnel.RemplirListePersonnel">
             <summary>
             Affiche les personnels dans lstPersonnel
@@ -569,6 +580,70 @@
             <summary>
             Rempli la comboBox ServiceS
             </summary>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.RemplirListeAbsence">
+            <summary>
+            Affiche les absences
+            </summary>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.RemplirComboBoxMotifs">
+            <summary>
+            Affiche les motifs 
+            </summary>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.lstPersonnel_CellEnter(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Affiche les informations du personnel sélectionné
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.btnAjt_Click(System.Object,System.EventArgs)">
+            <summary>
+            Ajout d'un personnel ou d'une absence (tous les champs doivent être remplis)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.btnSupp_Click(System.Object,System.EventArgs)">
+            <summary>
+            Suppression d'un personnel ou d'une absence (tous les champs doievnt être remplis)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.btnModif_Click(System.Object,System.EventArgs)">
+            <summary>
+            Modification des infos d'un personnel ou des infos d'une absence (tous les chaps doivent être remplis)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.btnRef_Click(System.Object,System.EventArgs)">
+            <summary>
+            MAJ des données de la BD
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.btnVider_Click(System.Object,System.EventArgs)">
+            <summary>
+            Vide les champs
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.Vider">
+            <summary>
+            Vide les champs
+            </summary>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.btnAbs_Click(System.Object,System.EventArgs)">
+            <summary>
+            Affiche les composants graphiques (Gestion Personnel) (Gestion Absence)
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
         </member>
         <member name="F:Mediatek.frmGestionPersonnel.components">
             <summary>
@@ -656,6 +731,11 @@
             </summary>
         </member>
         <member name="P:Mediatek.Properties.Resources.imglogin">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:Mediatek.Properties.Resources.refresh">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>

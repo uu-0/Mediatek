@@ -29,14 +29,15 @@ namespace Mediatek.vue
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionPersonnel));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtLogin = new System.Windows.Forms.TextBox();
             this.btnConnect = new System.Windows.Forms.Button();
             this.txtPwd = new System.Windows.Forms.TextBox();
             this.chkboxPwd = new System.Windows.Forms.CheckBox();
             this.lbMdp = new System.Windows.Forms.Label();
             this.lbLogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtLogin = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -56,6 +57,13 @@ namespace Mediatek.vue
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
+            // txtLogin
+            // 
+            this.txtLogin.Location = new System.Drawing.Point(25, 68);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(213, 20);
+            this.txtLogin.TabIndex = 6;
+            // 
             // btnConnect
             // 
             this.btnConnect.BackColor = System.Drawing.Color.Gray;
@@ -74,7 +82,7 @@ namespace Mediatek.vue
             // 
             // txtPwd
             // 
-            this.txtPwd.Location = new System.Drawing.Point(10, 120);
+            this.txtPwd.Location = new System.Drawing.Point(25, 120);
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(213, 20);
             this.txtPwd.TabIndex = 4;
@@ -83,7 +91,7 @@ namespace Mediatek.vue
             // 
             this.chkboxPwd.AutoSize = true;
             this.chkboxPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkboxPwd.Location = new System.Drawing.Point(10, 146);
+            this.chkboxPwd.Location = new System.Drawing.Point(25, 146);
             this.chkboxPwd.Name = "chkboxPwd";
             this.chkboxPwd.Size = new System.Drawing.Size(185, 22);
             this.chkboxPwd.TabIndex = 2;
@@ -95,7 +103,7 @@ namespace Mediatek.vue
             // 
             this.lbMdp.AutoSize = true;
             this.lbMdp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMdp.Location = new System.Drawing.Point(6, 97);
+            this.lbMdp.Location = new System.Drawing.Point(21, 97);
             this.lbMdp.Name = "lbMdp";
             this.lbMdp.Size = new System.Drawing.Size(105, 20);
             this.lbMdp.TabIndex = 1;
@@ -105,7 +113,7 @@ namespace Mediatek.vue
             // 
             this.lbLogin.AutoSize = true;
             this.lbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLogin.Location = new System.Drawing.Point(6, 45);
+            this.lbLogin.Location = new System.Drawing.Point(21, 45);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(130, 20);
             this.lbLogin.TabIndex = 0;
@@ -121,13 +129,6 @@ namespace Mediatek.vue
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // txtLogin
-            // 
-            this.txtLogin.Location = new System.Drawing.Point(10, 68);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(213, 20);
-            this.txtLogin.TabIndex = 6;
-            // 
             // frmGestionPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -136,6 +137,7 @@ namespace Mediatek.vue
             this.ClientSize = new System.Drawing.Size(624, 301);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGestionPersonnel";
             this.Text = "Connexion";
             this.groupBox1.ResumeLayout(false);

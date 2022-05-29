@@ -56,7 +56,7 @@ namespace Mediatek.vue
                 //si les infos entrées ne sont pas incorrectes
                 if(!controle.Authentification(txtLogin.Text, txtPwd.Text))
                 {
-                    MessageBox.Show("Le mot de passe ou le login est incorect.", "Alerte");
+                    MessageBox.Show("Le mot de passe ou le login est incorect.", "Information");
                     txtLogin.Text = "";
                     txtPwd.Text = "";
                     txtLogin.Focus();
@@ -64,7 +64,7 @@ namespace Mediatek.vue
                 }
                 else
                 {
-                    MessageBox.Show("Tous les champs doivent être remplis.", "Alerte");
+                    MessageBox.Show("Tous les champs doivent être remplis.", "Information");
                 }
             }
         }

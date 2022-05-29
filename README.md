@@ -35,11 +35,10 @@
 
 # Ressources
 
-Logo: https://www.flaticon.com/
+Logo:
 
 Image: https://fr.pngtree.com
-       https://www.flaticon.com/
-    
+
 
 
 # © Copyright 2022 by POPCZYK Louise

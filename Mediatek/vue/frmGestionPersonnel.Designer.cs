@@ -30,6 +30,7 @@ namespace Mediatek
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmGestionPersonnel));
             this.lbGestion = new System.Windows.Forms.Label();
             this.lbInfo = new System.Windows.Forms.Label();
             this.lbNom = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@ namespace Mediatek
             this.txtPrenom = new System.Windows.Forms.TextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
             this.txtMail = new System.Windows.Forms.TextBox();
-            this.grpSaisie = new System.Windows.Forms.GroupBox();
             this.btnVider = new System.Windows.Forms.Button();
             this.btnAjt = new System.Windows.Forms.Button();
             this.btnAbs = new System.Windows.Forms.Button();
@@ -50,9 +50,19 @@ namespace Mediatek
             this.btnSupp = new System.Windows.Forms.Button();
             this.grpBtn = new System.Windows.Forms.GroupBox();
             this.lstPersonnel = new System.Windows.Forms.DataGridView();
-            this.grpSaisie.SuspendLayout();
+            this.lstAbs = new System.Windows.Forms.DataGridView();
+            this.grpSaisie = new System.Windows.Forms.GroupBox();
+            this.btnRef = new System.Windows.Forms.Button();
+            this.cboBoxMotif = new System.Windows.Forms.ComboBox();
+            this.lbMotif = new System.Windows.Forms.Label();
+            this.dateTimeFin = new System.Windows.Forms.DateTimePicker();
+            this.lbDatefin = new System.Windows.Forms.Label();
+            this.dateTimeDebut = new System.Windows.Forms.DateTimePicker();
+            this.lbDatedeb = new System.Windows.Forms.Label();
             this.grpBtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.lstPersonnel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lstAbs)).BeginInit();
+            this.grpSaisie.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbGestion
@@ -73,11 +83,11 @@ namespace Mediatek
             this.lbInfo.BackColor = System.Drawing.Color.Teal;
             this.lbInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInfo.ForeColor = System.Drawing.Color.White;
-            this.lbInfo.Location = new System.Drawing.Point(541, 28);
+            this.lbInfo.Location = new System.Drawing.Point(611, 28);
             this.lbInfo.Name = "lbInfo";
-            this.lbInfo.Size = new System.Drawing.Size(287, 25);
+            this.lbInfo.Size = new System.Drawing.Size(152, 25);
             this.lbInfo.TabIndex = 2;
-            this.lbInfo.Text = "Informations du Personnel";
+            this.lbInfo.Text = "Coordonnées";
             // 
             // lbNom
             // 
@@ -160,30 +170,10 @@ namespace Mediatek
             // 
             // txtMail
             // 
-            this.txtMail.Location = new System.Drawing.Point(175, 99);
+            this.txtMail.Location = new System.Drawing.Point(179, 99);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(144, 20);
             this.txtMail.TabIndex = 12;
-            // 
-            // grpSaisie
-            // 
-            this.grpSaisie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.grpSaisie.Controls.Add(this.btnVider);
-            this.grpSaisie.Controls.Add(this.txtMail);
-            this.grpSaisie.Controls.Add(this.txtTel);
-            this.grpSaisie.Controls.Add(this.txtPrenom);
-            this.grpSaisie.Controls.Add(this.txtNom);
-            this.grpSaisie.Controls.Add(this.cboBoxService);
-            this.grpSaisie.Controls.Add(this.lbService);
-            this.grpSaisie.Controls.Add(this.lbMail);
-            this.grpSaisie.Controls.Add(this.lbTel);
-            this.grpSaisie.Controls.Add(this.lbPrenom);
-            this.grpSaisie.Controls.Add(this.lbNom);
-            this.grpSaisie.Location = new System.Drawing.Point(16, 72);
-            this.grpSaisie.Name = "grpSaisie";
-            this.grpSaisie.Size = new System.Drawing.Size(350, 242);
-            this.grpSaisie.TabIndex = 13;
-            this.grpSaisie.TabStop = false;
             // 
             // btnVider
             // 
@@ -194,12 +184,13 @@ namespace Mediatek
             this.btnVider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVider.ForeColor = System.Drawing.Color.White;
-            this.btnVider.Location = new System.Drawing.Point(26, 190);
+            this.btnVider.Location = new System.Drawing.Point(26, 214);
             this.btnVider.Name = "btnVider";
             this.btnVider.Size = new System.Drawing.Size(75, 28);
             this.btnVider.TabIndex = 19;
             this.btnVider.Text = "VIDER";
             this.btnVider.UseVisualStyleBackColor = false;
+            this.btnVider.Click += new System.EventHandler(this.btnVider_Click);
             // 
             // btnAjt
             // 
@@ -215,6 +206,7 @@ namespace Mediatek
             this.btnAjt.TabIndex = 14;
             this.btnAjt.Text = "AJOUTER";
             this.btnAjt.UseVisualStyleBackColor = false;
+            this.btnAjt.Click += new System.EventHandler(this.btnAjt_Click);
             // 
             // btnAbs
             // 
@@ -230,6 +222,7 @@ namespace Mediatek
             this.btnAbs.TabIndex = 15;
             this.btnAbs.Text = "VOIR LES ABSENCES";
             this.btnAbs.UseVisualStyleBackColor = false;
+            this.btnAbs.Click += new System.EventHandler(this.btnAbs_Click);
             // 
             // btnModif
             // 
@@ -245,6 +238,7 @@ namespace Mediatek
             this.btnModif.TabIndex = 16;
             this.btnModif.Text = "MODIFIER";
             this.btnModif.UseVisualStyleBackColor = false;
+            this.btnModif.Click += new System.EventHandler(this.btnModif_Click);
             // 
             // btnSupp
             // 
@@ -260,10 +254,11 @@ namespace Mediatek
             this.btnSupp.TabIndex = 17;
             this.btnSupp.Text = "SUPPRIMER";
             this.btnSupp.UseVisualStyleBackColor = false;
+            this.btnSupp.Click += new System.EventHandler(this.btnSupp_Click);
             // 
             // grpBtn
             // 
-            this.grpBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.grpBtn.BackColor = System.Drawing.Color.Gainsboro;
             this.grpBtn.Controls.Add(this.btnSupp);
             this.grpBtn.Controls.Add(this.btnModif);
             this.grpBtn.Controls.Add(this.btnAbs);
@@ -280,25 +275,146 @@ namespace Mediatek
             this.lstPersonnel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.lstPersonnel.Location = new System.Drawing.Point(406, 72);
             this.lstPersonnel.Name = "lstPersonnel";
-            this.lstPersonnel.Size = new System.Drawing.Size(562, 498);
+            this.lstPersonnel.Size = new System.Drawing.Size(538, 498);
             this.lstPersonnel.TabIndex = 19;
+            this.lstPersonnel.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.lstPersonnel_CellEnter);
+            // 
+            // lstAbs
+            // 
+            this.lstAbs.BackgroundColor = System.Drawing.Color.White;
+            this.lstAbs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lstAbs.Location = new System.Drawing.Point(541, 89);
+            this.lstAbs.Name = "lstAbs";
+            this.lstAbs.Size = new System.Drawing.Size(275, 467);
+            this.lstAbs.TabIndex = 20;
+            this.lstAbs.Visible = false;
+            this.lstAbs.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.lstAbs_CellEnter);
+            // 
+            // grpSaisie
+            // 
+            this.grpSaisie.BackColor = System.Drawing.Color.Gainsboro;
+            this.grpSaisie.Controls.Add(this.btnRef);
+            this.grpSaisie.Controls.Add(this.cboBoxMotif);
+            this.grpSaisie.Controls.Add(this.lbMotif);
+            this.grpSaisie.Controls.Add(this.dateTimeFin);
+            this.grpSaisie.Controls.Add(this.lbDatefin);
+            this.grpSaisie.Controls.Add(this.dateTimeDebut);
+            this.grpSaisie.Controls.Add(this.lbDatedeb);
+            this.grpSaisie.Controls.Add(this.btnVider);
+            this.grpSaisie.Controls.Add(this.txtMail);
+            this.grpSaisie.Controls.Add(this.txtTel);
+            this.grpSaisie.Controls.Add(this.txtPrenom);
+            this.grpSaisie.Controls.Add(this.txtNom);
+            this.grpSaisie.Controls.Add(this.cboBoxService);
+            this.grpSaisie.Controls.Add(this.lbService);
+            this.grpSaisie.Controls.Add(this.lbMail);
+            this.grpSaisie.Controls.Add(this.lbTel);
+            this.grpSaisie.Controls.Add(this.lbPrenom);
+            this.grpSaisie.Controls.Add(this.lbNom);
+            this.grpSaisie.Location = new System.Drawing.Point(16, 72);
+            this.grpSaisie.Name = "grpSaisie";
+            this.grpSaisie.Size = new System.Drawing.Size(350, 258);
+            this.grpSaisie.TabIndex = 13;
+            this.grpSaisie.TabStop = false;
+            // 
+            // btnRef
+            // 
+            this.btnRef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRef.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnRef.FlatAppearance.BorderSize = 0;
+            this.btnRef.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnRef.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnRef.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRef.Location = new System.Drawing.Point(284, 209);
+            this.btnRef.Name = "btnRef";
+            this.btnRef.Size = new System.Drawing.Size(36, 38);
+            this.btnRef.TabIndex = 24;
+            this.btnRef.UseVisualStyleBackColor = true;
+            this.btnRef.Click += new System.EventHandler(this.btnRef_Click);
+            // 
+            // cboBoxMotif
+            // 
+            this.cboBoxMotif.FormattingEnabled = true;
+            this.cboBoxMotif.Location = new System.Drawing.Point(25, 150);
+            this.cboBoxMotif.Name = "cboBoxMotif";
+            this.cboBoxMotif.Size = new System.Drawing.Size(295, 21);
+            this.cboBoxMotif.TabIndex = 23;
+            this.cboBoxMotif.Visible = false;
+            // 
+            // lbMotif
+            // 
+            this.lbMotif.AutoSize = true;
+            this.lbMotif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMotif.Location = new System.Drawing.Point(22, 127);
+            this.lbMotif.Name = "lbMotif";
+            this.lbMotif.Size = new System.Drawing.Size(44, 20);
+            this.lbMotif.TabIndex = 21;
+            this.lbMotif.Text = "Motif";
+            this.lbMotif.Visible = false;
+            // 
+            // dateTimeFin
+            // 
+            this.dateTimeFin.Location = new System.Drawing.Point(26, 99);
+            this.dateTimeFin.MaxDate = new System.DateTime(2100, 1, 1, 0, 0, 0, 0);
+            this.dateTimeFin.MinDate = new System.DateTime(2000, 5, 29, 0, 0, 0, 0);
+            this.dateTimeFin.Name = "dateTimeFin";
+            this.dateTimeFin.Size = new System.Drawing.Size(297, 20);
+            this.dateTimeFin.TabIndex = 22;
+            this.dateTimeFin.Value = new System.DateTime(2022, 5, 29, 0, 0, 0, 0);
+            this.dateTimeFin.Visible = false;
+            // 
+            // lbDatefin
+            // 
+            this.lbDatefin.AutoSize = true;
+            this.lbDatefin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDatefin.Location = new System.Drawing.Point(22, 76);
+            this.lbDatefin.Name = "lbDatefin";
+            this.lbDatefin.Size = new System.Drawing.Size(87, 20);
+            this.lbDatefin.TabIndex = 22;
+            this.lbDatefin.Text = "Date de fin";
+            this.lbDatefin.Visible = false;
+            // 
+            // dateTimeDebut
+            // 
+            this.dateTimeDebut.Location = new System.Drawing.Point(26, 42);
+            this.dateTimeDebut.MaxDate = new System.DateTime(2100, 1, 1, 0, 0, 0, 0);
+            this.dateTimeDebut.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.dateTimeDebut.Name = "dateTimeDebut";
+            this.dateTimeDebut.Size = new System.Drawing.Size(294, 20);
+            this.dateTimeDebut.TabIndex = 21;
+            this.dateTimeDebut.Value = new System.DateTime(2022, 5, 29, 0, 0, 0, 0);
+            this.dateTimeDebut.Visible = false;
+            // 
+            // lbDatedeb
+            // 
+            this.lbDatedeb.AutoSize = true;
+            this.lbDatedeb.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDatedeb.Location = new System.Drawing.Point(22, 19);
+            this.lbDatedeb.Name = "lbDatedeb";
+            this.lbDatedeb.Size = new System.Drawing.Size(111, 20);
+            this.lbDatedeb.TabIndex = 21;
+            this.lbDatedeb.Text = "Date de début";
+            this.lbDatedeb.Visible = false;
             // 
             // frmGestionPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(988, 588);
+            this.ClientSize = new System.Drawing.Size(960, 588);
+            this.Controls.Add(this.lstAbs);
             this.Controls.Add(this.lstPersonnel);
             this.Controls.Add(this.grpBtn);
             this.Controls.Add(this.grpSaisie);
             this.Controls.Add(this.lbInfo);
             this.Controls.Add(this.lbGestion);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGestionPersonnel";
             this.Text = "Gestion du Personnel";
-            this.grpSaisie.ResumeLayout(false);
-            this.grpSaisie.PerformLayout();
             this.grpBtn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lstPersonnel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lstAbs)).EndInit();
+            this.grpSaisie.ResumeLayout(false);
+            this.grpSaisie.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -317,7 +433,6 @@ namespace Mediatek
         private System.Windows.Forms.TextBox txtPrenom;
         private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.TextBox txtMail;
-        private System.Windows.Forms.GroupBox grpSaisie;
         private System.Windows.Forms.Button btnAjt;
         private System.Windows.Forms.Button btnAbs;
         private System.Windows.Forms.Button btnModif;
@@ -325,6 +440,15 @@ namespace Mediatek
         private System.Windows.Forms.Button btnVider;
         private System.Windows.Forms.GroupBox grpBtn;
         private System.Windows.Forms.DataGridView lstPersonnel;
+        private System.Windows.Forms.DataGridView lstAbs;
+        private System.Windows.Forms.GroupBox grpSaisie;
+        private System.Windows.Forms.Button btnRef;
+        private System.Windows.Forms.ComboBox cboBoxMotif;
+        private System.Windows.Forms.Label lbMotif;
+        private System.Windows.Forms.DateTimePicker dateTimeFin;
+        private System.Windows.Forms.Label lbDatefin;
+        private System.Windows.Forms.DateTimePicker dateTimeDebut;
+        private System.Windows.Forms.Label lbDatedeb;
     }
 }
 
