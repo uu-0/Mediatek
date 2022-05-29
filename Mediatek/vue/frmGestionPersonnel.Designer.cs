@@ -21,6 +21,7 @@ namespace Mediatek
             base.Dispose(disposing);
         }
 
+
         #region Code généré par le Concepteur Windows Form
 
         /// <summary>
