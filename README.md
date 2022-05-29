@@ -12,19 +12,19 @@
 
 # Étape de développement
 
-•Préparation de l'environnement de travail, création de base de données
+• Préparation de l'environnement de travail, création de base de données
 
-•Prototype de l'application, structuration de l'application en MVC, code du visuel
+• Prototype de l'application, structuration de l'application en MVC, code du visuel
 
-•Code des classes métiers du package Modèle, des outils de connexion du package connexion, génération de la documentation technique
+• Code des classes métiers du package Modèle, des outils de connexion du package connexion, génération de la documentation technique
 
-•Code des fonctionnalités à partir des cas d'utilisation
+• Code des fonctionnalités à partir des cas d'utilisation
 
-•Création d'une documentation utilisateur en vidéo
+• Création d'une documentation utilisateur en vidéo
 
-•Dépploiement de l'application, rédaction du compte rendu du PPE, création de la page du portfolio dédiée à la mission
+• Dépploiement de l'application, rédaction du compte rendu du PPE, création de la page du portfolio dédiée à la mission
 
-# vidéo
+# Tutoriel
 
 à ajt
 
