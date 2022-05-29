@@ -42,3 +42,7 @@ C:\MediatekMaster\Mediatek\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.csproj.CopyComplete
 C:\MediatekMaster\Mediatek\bin\Debug\Mediatek.xml
 C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.vue.frmGestionPersonnel.resources
+C:\MediatekMaster\Mediatek\bin\Debug\Mediatek.exe.manifest
+C:\MediatekMaster\Mediatek\bin\Debug\Mediatek.application
+C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.exe.manifest
+C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.application

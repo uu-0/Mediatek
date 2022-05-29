@@ -66,6 +66,7 @@ namespace Mediatek
             ((System.ComponentModel.ISupportInitialize)(this.lstPersonnel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lstAbs)).BeginInit();
             this.grpSaisie.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +77,7 @@ namespace Mediatek
             this.lbGestion.BackColor = System.Drawing.Color.Teal;
             this.lbGestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGestion.ForeColor = System.Drawing.Color.White;
-            this.lbGestion.Location = new System.Drawing.Point(64, 18);
+            this.lbGestion.Location = new System.Drawing.Point(48, 12);
             this.lbGestion.Name = "lbGestion";
             this.lbGestion.Size = new System.Drawing.Size(239, 25);
             this.lbGestion.TabIndex = 1;
@@ -88,7 +89,7 @@ namespace Mediatek
             this.lbInfo.BackColor = System.Drawing.Color.Teal;
             this.lbInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInfo.ForeColor = System.Drawing.Color.White;
-            this.lbInfo.Location = new System.Drawing.Point(94, 12);
+            this.lbInfo.Location = new System.Drawing.Point(128, 12);
             this.lbInfo.Name = "lbInfo";
             this.lbInfo.Size = new System.Drawing.Size(152, 25);
             this.lbInfo.TabIndex = 2;
@@ -406,6 +407,7 @@ namespace Mediatek
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Silver;
+            this.panel1.Controls.Add(this.lbGestion);
             this.panel1.Location = new System.Drawing.Point(16, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(346, 50);
@@ -415,9 +417,9 @@ namespace Mediatek
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
             this.panel2.Controls.Add(this.lbInfo);
-            this.panel2.Location = new System.Drawing.Point(511, 6);
+            this.panel2.Location = new System.Drawing.Point(473, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(346, 50);
+            this.panel2.Size = new System.Drawing.Size(411, 50);
             this.panel2.TabIndex = 22;
             // 
             // panel3
@@ -437,7 +439,6 @@ namespace Mediatek
             this.Controls.Add(this.lstPersonnel);
             this.Controls.Add(this.grpBtn);
             this.Controls.Add(this.grpSaisie);
-            this.Controls.Add(this.lbGestion);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
@@ -449,11 +450,12 @@ namespace Mediatek
             ((System.ComponentModel.ISupportInitialize)(this.lstAbs)).EndInit();
             this.grpSaisie.ResumeLayout(false);
             this.grpSaisie.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

@@ -95,8 +95,8 @@ namespace Mediatek
                 // Personnel
                 btnRef.Location = new Point(287, 204);
                 btnVider.Location = new Point(26, 214);
-                lbGestion.Location = new Point(64, 18);
-                lbInfo.Location = new Point(94, 12);
+                lbGestion.Location = new Point(48, 12);
+                lbInfo.Location = new Point(128, 12);
                 lbNom.ForeColor = System.Drawing.Color.Black;
                 lbPrenom.ForeColor = System.Drawing.Color.Black;
                 lbMail.ForeColor = System.Drawing.Color.Black;
@@ -110,8 +110,8 @@ namespace Mediatek
                 // GESTION DES ABSENCES
                 btnRef.Location = new Point(287, 204);
                 btnVider.Location = new Point(26, 214);
-                lbGestion.Location = new Point(64, 18);
-                lbInfo.Location = new Point(120, 12);
+                lbGestion.Location = new Point(48, 12);
+                lbInfo.Location = new Point(148, 12);
                 //change la couleur des deux labels pour qu'ils aient la même que le fond
                 lbNom.ForeColor = System.Drawing.Color.Gainsboro;
                 lbPrenom.ForeColor = System.Drawing.Color.Gainsboro;
