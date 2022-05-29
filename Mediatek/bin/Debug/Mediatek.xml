@@ -735,6 +735,11 @@
               Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
+        <member name="P:Mediatek.Properties.Resources.logo">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
+            </summary>
+        </member>
         <member name="P:Mediatek.Properties.Resources.refresh">
             <summary>
               Recherche une ressource localisée de type System.Drawing.Bitmap.
