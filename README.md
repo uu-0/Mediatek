@@ -1,6 +1,6 @@
 # MediaTek86
 
-• MediaTek86 est une application de bureau (Windows forms C#) développée lors de ma formation en BTS SIO option SLAM (Services Informatiques aux Organisations), dans le cadre de mon PPE (Projet Personnel Encardé) de première année.
+MediaTek86 est une application de bureau (Windows forms C#) développée lors de ma formation en BTS SIO option SLAM (Services Informatiques aux Organisations), dans le cadre de mon PPE (Projet Personnel Encardé) de première année.
 
 # Contexte
 
@@ -35,10 +35,9 @@
 
 # Ressources
 
-Logo:
-
 Image: https://fr.pngtree.com
 
+Icône: https://www.flaticon.com/
 
 
 # © Copyright 2022 by POPCZYK Louise
