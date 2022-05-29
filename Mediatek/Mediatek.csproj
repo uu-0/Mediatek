@@ -93,6 +93,11 @@
     <Compile Include="connexion\ConnexionBDD.cs" />
     <Compile Include="controleur\Controle.cs" />
     <Compile Include="dal\AccesDonnees.cs" />
+    <Compile Include="mediatekDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mediatekDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="modele\Absence.cs" />
     <Compile Include="modele\Motif.cs" />
     <Compile Include="modele\Personnel.cs" />
@@ -127,6 +132,17 @@
     <EmbeddedResource Include="vue\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="mediatekDataSet.xsc">
+      <DependentUpon>mediatekDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="mediatekDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mediatekDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mediatekDataSet.xss">
+      <DependentUpon>mediatekDataSet.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

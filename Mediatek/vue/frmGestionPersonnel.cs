@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
+
 namespace Mediatek
 {
 
@@ -52,7 +53,33 @@ namespace Mediatek
         /// </summary>
         public void Init()
         {
+            // Remplissage des listes
+            RemplirListePersonnel();
+            RemplirComboBoxService();
 
+        }
+
+        /// <summary>
+        /// Affiche les personnels dans lstPersonnel
+        /// </summary>
+        public void RemplirListePersonnel()
+        {
+            List<Personnel> lesPersonnels = controle.GetLesPersonnels();
+            bdgPersonnel.DataSource = lesPersonnels;
+            lstPersonnel.DataSource = bdgPersonnel;
+            lstPersonnel.Columns["idpersonnel"].Visible = false;
+            lstPersonnel.Columns["idservice"].Visible = false;
+            lstPersonnel.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+        }
+
+        /// <summary>
+        /// Rempli la comboBox ServiceS
+        /// </summary>
+        public void RemplirComboBoxService()
+        {
+            List<Service> lesServices = controle.GetLesServices();
+            bdgService.DataSource = lesServices;
+            cboBoxService.DataSource = bdgService;
         }
 
     }

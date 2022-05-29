@@ -373,6 +373,151 @@
             <param name="absence">objet de type absence à supprimer</param>
             /// <param name="idpersonnel">idpersonnel du personnel sélectionné</param>
         </member>
+        <member name="T:Mediatek.mediatekDataSet">
+             <summary>
+            Represents a strongly typed in-memory cache of data.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.absenceDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.motifDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.personnelDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.responsableDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.serviceDataTable">
+             <summary>
+            Represents the strongly named DataTable class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.absenceRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.motifRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.personnelRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.responsableRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.serviceRow">
+             <summary>
+            Represents strongly named DataRow class.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.absenceRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.motifRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.personnelRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.responsableRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSet.serviceRowChangeEvent">
+             <summary>
+            Row event argument class
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSetTableAdapters.absenceTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSetTableAdapters.motifTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSetTableAdapters.personnelTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSetTableAdapters.responsableTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSetTableAdapters.serviceTableAdapter">
+             <summary>
+            Represents the connection and commands used to retrieve and save data.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSetTableAdapters.TableAdapterManager">
+             <summary>
+            TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+            </summary>
+        </member>
+        <member name="M:Mediatek.mediatekDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Mediatek.mediatekDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Update rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:Mediatek.mediatekDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Mediatek.mediatekDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Insert rows in top-down order.
+            </summary>
+        </member>
+        <member name="M:Mediatek.mediatekDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Mediatek.mediatekDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Delete rows in bottom-up order.
+            </summary>
+        </member>
+        <member name="M:Mediatek.mediatekDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+             <summary>
+            Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+            </summary>
+        </member>
+        <member name="M:Mediatek.mediatekDataSetTableAdapters.TableAdapterManager.UpdateAll(Mediatek.mediatekDataSet)">
+             <summary>
+            Update all changes to the dataset.
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+             <summary>
+            Update Order Option
+            </summary>
+        </member>
+        <member name="T:Mediatek.mediatekDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+             <summary>
+            Used to sort self-referenced table's rows
+            </summary>
+        </member>
         <member name="T:Mediatek.frmGestionPersonnel">
             <summary>
             Fenêtre d'affichage des personnels et de leurs informations
@@ -413,6 +558,16 @@
         <member name="M:Mediatek.frmGestionPersonnel.Init">
             <summary>
             Initialisation de la frame : remplissage des listes
+            </summary>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.RemplirListePersonnel">
+            <summary>
+            Affiche les personnels dans lstPersonnel
+            </summary>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.RemplirComboBoxService">
+            <summary>
+            Rempli la comboBox ServiceS
             </summary>
         </member>
         <member name="F:Mediatek.frmGestionPersonnel.components">

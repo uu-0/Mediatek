@@ -14,7 +14,7 @@ namespace Mediatek.dal
         /// <summary>
         /// Chaine de connexion à la BDD
         /// </summary>
-        private static string connectionString = "Server=localhost;Database=mediatek;User Id=admin;Password=P@$$word; Ssl mode=none";
+        private static string connectionString = "Server=localhost;Database=mediatek;User Id=admin;Password=P@$$word;";
         /// <summary>
         /// Authentification (login/pwd)
         /// </summary>

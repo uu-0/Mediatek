@@ -1,6 +1,4 @@
-﻿using Mediatek;
-using Mediatek.dal;
-using Mediatek.vue;
+﻿using Mediatek.dal;
 using MediaTek.modele;
 using System;
 using System.Collections.Generic;

@@ -30,7 +30,6 @@ namespace Mediatek
         /// </summary>
         private void InitializeComponent()
         {
-            this.lstPersonnel = new System.Windows.Forms.ListBox();
             this.lbGestion = new System.Windows.Forms.Label();
             this.lbInfo = new System.Windows.Forms.Label();
             this.lbNom = new System.Windows.Forms.Label();
@@ -50,17 +49,11 @@ namespace Mediatek
             this.btnModif = new System.Windows.Forms.Button();
             this.btnSupp = new System.Windows.Forms.Button();
             this.grpBtn = new System.Windows.Forms.GroupBox();
+            this.lstPersonnel = new System.Windows.Forms.DataGridView();
             this.grpSaisie.SuspendLayout();
             this.grpBtn.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.lstPersonnel)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lstPersonnel
-            // 
-            this.lstPersonnel.FormattingEnabled = true;
-            this.lstPersonnel.Location = new System.Drawing.Point(372, 72);
-            this.lstPersonnel.Name = "lstPersonnel";
-            this.lstPersonnel.Size = new System.Drawing.Size(446, 498);
-            this.lstPersonnel.TabIndex = 0;
             // 
             // lbGestion
             // 
@@ -80,7 +73,7 @@ namespace Mediatek
             this.lbInfo.BackColor = System.Drawing.Color.Teal;
             this.lbInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInfo.ForeColor = System.Drawing.Color.White;
-            this.lbInfo.Location = new System.Drawing.Point(440, 28);
+            this.lbInfo.Location = new System.Drawing.Point(541, 28);
             this.lbInfo.Name = "lbInfo";
             this.lbInfo.Size = new System.Drawing.Size(287, 25);
             this.lbInfo.TabIndex = 2;
@@ -281,29 +274,37 @@ namespace Mediatek
             this.grpBtn.TabIndex = 18;
             this.grpBtn.TabStop = false;
             // 
+            // lstPersonnel
+            // 
+            this.lstPersonnel.BackgroundColor = System.Drawing.Color.White;
+            this.lstPersonnel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.lstPersonnel.Location = new System.Drawing.Point(406, 72);
+            this.lstPersonnel.Name = "lstPersonnel";
+            this.lstPersonnel.Size = new System.Drawing.Size(562, 498);
+            this.lstPersonnel.TabIndex = 19;
+            // 
             // frmGestionPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 588);
+            this.ClientSize = new System.Drawing.Size(988, 588);
+            this.Controls.Add(this.lstPersonnel);
             this.Controls.Add(this.grpBtn);
             this.Controls.Add(this.grpSaisie);
             this.Controls.Add(this.lbInfo);
             this.Controls.Add(this.lbGestion);
-            this.Controls.Add(this.lstPersonnel);
             this.Name = "frmGestionPersonnel";
             this.Text = "Gestion du Personnel";
             this.grpSaisie.ResumeLayout(false);
             this.grpSaisie.PerformLayout();
             this.grpBtn.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.lstPersonnel)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox lstPersonnel;
         private System.Windows.Forms.Label lbGestion;
         private System.Windows.Forms.Label lbInfo;
         private System.Windows.Forms.Label lbNom;
@@ -323,6 +324,7 @@ namespace Mediatek
         private System.Windows.Forms.Button btnSupp;
         private System.Windows.Forms.Button btnVider;
         private System.Windows.Forms.GroupBox grpBtn;
+        private System.Windows.Forms.DataGridView lstPersonnel;
     }
 }
 
