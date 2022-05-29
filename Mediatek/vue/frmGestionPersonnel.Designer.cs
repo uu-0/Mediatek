@@ -52,13 +52,13 @@ namespace Mediatek
             this.lstPersonnel = new System.Windows.Forms.DataGridView();
             this.lstAbs = new System.Windows.Forms.DataGridView();
             this.grpSaisie = new System.Windows.Forms.GroupBox();
+            this.btnRef = new System.Windows.Forms.Button();
             this.cboBoxMotif = new System.Windows.Forms.ComboBox();
             this.lbMotif = new System.Windows.Forms.Label();
             this.dateTimeFin = new System.Windows.Forms.DateTimePicker();
             this.lbDatefin = new System.Windows.Forms.Label();
             this.dateTimeDebut = new System.Windows.Forms.DateTimePicker();
             this.lbDatedeb = new System.Windows.Forms.Label();
-            this.btnRef = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -324,6 +324,22 @@ namespace Mediatek
             this.grpSaisie.TabIndex = 13;
             this.grpSaisie.TabStop = false;
             // 
+            // btnRef
+            // 
+            this.btnRef.BackgroundImage = global::Mediatek.Properties.Resources.refresh;
+            this.btnRef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRef.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnRef.FlatAppearance.BorderSize = 0;
+            this.btnRef.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btnRef.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btnRef.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRef.Location = new System.Drawing.Point(287, 204);
+            this.btnRef.Name = "btnRef";
+            this.btnRef.Size = new System.Drawing.Size(36, 38);
+            this.btnRef.TabIndex = 24;
+            this.btnRef.UseVisualStyleBackColor = true;
+            this.btnRef.Click += new System.EventHandler(this.btnRef_Click);
+            // 
             // cboBoxMotif
             // 
             this.cboBoxMotif.FormattingEnabled = true;
@@ -387,22 +403,6 @@ namespace Mediatek
             this.lbDatedeb.TabIndex = 21;
             this.lbDatedeb.Text = "Date de début";
             this.lbDatedeb.Visible = false;
-            // 
-            // btnRef
-            // 
-            this.btnRef.BackgroundImage = global::Mediatek.Properties.Resources.refresh;
-            this.btnRef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRef.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnRef.FlatAppearance.BorderSize = 0;
-            this.btnRef.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnRef.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnRef.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRef.Location = new System.Drawing.Point(287, 204);
-            this.btnRef.Name = "btnRef";
-            this.btnRef.Size = new System.Drawing.Size(36, 38);
-            this.btnRef.TabIndex = 24;
-            this.btnRef.UseVisualStyleBackColor = true;
-            this.btnRef.Click += new System.EventHandler(this.btnRef_Click);
             // 
             // panel1
             // 
