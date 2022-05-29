@@ -31,23 +31,23 @@ namespace Mediatek.vue
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnConnect = new System.Windows.Forms.Button();
-            this.txtMdp = new System.Windows.Forms.TextBox();
+            this.txtPwd = new System.Windows.Forms.TextBox();
             this.txtLogin = new System.Windows.Forms.TextBox();
-            this.checkMdp = new System.Windows.Forms.CheckBox();
+            this.chkboxPwd = new System.Windows.Forms.CheckBox();
             this.lbMdp = new System.Windows.Forms.Label();
             this.lbLogin = new System.Windows.Forms.Label();
-            this.picLogin = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
             this.groupBox1.Controls.Add(this.btnConnect);
-            this.groupBox1.Controls.Add(this.txtMdp);
+            this.groupBox1.Controls.Add(this.txtPwd);
             this.groupBox1.Controls.Add(this.txtLogin);
-            this.groupBox1.Controls.Add(this.checkMdp);
+            this.groupBox1.Controls.Add(this.chkboxPwd);
             this.groupBox1.Controls.Add(this.lbMdp);
             this.groupBox1.Controls.Add(this.lbLogin);
             this.groupBox1.Location = new System.Drawing.Point(229, 24);
@@ -59,21 +59,23 @@ namespace Mediatek.vue
             // btnConnect
             // 
             this.btnConnect.BackColor = System.Drawing.Color.Gray;
+            this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConnect.ForeColor = System.Drawing.Color.White;
-            this.btnConnect.Location = new System.Drawing.Point(126, 190);
+            this.btnConnect.Location = new System.Drawing.Point(181, 190);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(223, 38);
+            this.btnConnect.Size = new System.Drawing.Size(161, 38);
             this.btnConnect.TabIndex = 5;
             this.btnConnect.Text = "CONNEXION";
             this.btnConnect.UseVisualStyleBackColor = false;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
-            // txtMdp
+            // txtPwd
             // 
-            this.txtMdp.Location = new System.Drawing.Point(10, 120);
-            this.txtMdp.Name = "txtMdp";
-            this.txtMdp.Size = new System.Drawing.Size(213, 20);
-            this.txtMdp.TabIndex = 4;
+            this.txtPwd.Location = new System.Drawing.Point(10, 120);
+            this.txtPwd.Name = "txtPwd";
+            this.txtPwd.Size = new System.Drawing.Size(213, 20);
+            this.txtPwd.TabIndex = 4;
             // 
             // txtLogin
             // 
@@ -82,16 +84,17 @@ namespace Mediatek.vue
             this.txtLogin.Size = new System.Drawing.Size(213, 20);
             this.txtLogin.TabIndex = 3;
             // 
-            // checkMdp
+            // chkboxPwd
             // 
-            this.checkMdp.AutoSize = true;
-            this.checkMdp.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkMdp.Location = new System.Drawing.Point(10, 146);
-            this.checkMdp.Name = "checkMdp";
-            this.checkMdp.Size = new System.Drawing.Size(185, 22);
-            this.checkMdp.TabIndex = 2;
-            this.checkMdp.Text = "Afficher le mot de passe";
-            this.checkMdp.UseVisualStyleBackColor = true;
+            this.chkboxPwd.AutoSize = true;
+            this.chkboxPwd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkboxPwd.Location = new System.Drawing.Point(10, 146);
+            this.chkboxPwd.Name = "chkboxPwd";
+            this.chkboxPwd.Size = new System.Drawing.Size(185, 22);
+            this.chkboxPwd.TabIndex = 2;
+            this.chkboxPwd.Text = "Afficher le mot de passe";
+            this.chkboxPwd.UseVisualStyleBackColor = true;
+            this.chkboxPwd.CheckedChanged += new System.EventHandler(this.chcPwd_CheckedChanged);
             // 
             // lbMdp
             // 
@@ -113,17 +116,15 @@ namespace Mediatek.vue
             this.lbLogin.TabIndex = 0;
             this.lbLogin.Text = "Nom d\'utilisateur ";
             // 
-            // picLogin
+            // pictureBox1
             // 
-            this.picLogin.BackColor = System.Drawing.Color.Transparent;
-            this.picLogin.Image = global::Mediatek.Properties.Resources.imglogin;
-            this.picLogin.Location = new System.Drawing.Point(12, 35);
-            this.picLogin.MaximumSize = new System.Drawing.Size(254, 254);
-            this.picLogin.Name = "picLogin";
-            this.picLogin.Size = new System.Drawing.Size(211, 217);
-            this.picLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picLogin.TabIndex = 1;
-            this.picLogin.TabStop = false;
+            this.pictureBox1.Image = global::Mediatek.Properties.Resources.imglogin;
+            this.pictureBox1.Location = new System.Drawing.Point(29, 54);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(177, 198);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // frmLogin
             // 
@@ -131,13 +132,13 @@ namespace Mediatek.vue
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(624, 301);
-            this.Controls.Add(this.picLogin);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmLogin";
             this.Text = "Connexion";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picLogin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -148,9 +149,9 @@ namespace Mediatek.vue
         private System.Windows.Forms.Label lbMdp;
         private System.Windows.Forms.Label lbLogin;
         private System.Windows.Forms.Button btnConnect;
-        private System.Windows.Forms.TextBox txtMdp;
+        private System.Windows.Forms.TextBox txtPwd;
         private System.Windows.Forms.TextBox txtLogin;
-        private System.Windows.Forms.CheckBox checkMdp;
-        private System.Windows.Forms.PictureBox picLogin;
+        private System.Windows.Forms.CheckBox chkboxPwd;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -74,10 +74,223 @@
             Fermeture du curseur
             </summary>
         </member>
+        <member name="T:MediaTek.modele.Absence">
+            <summary>
+            Classe métier correspondant à la table "Absence" de la base de données
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Absence.Datedebut">
+            <summary>
+            Getter : datedebut (format: jj/mm/aaaa)
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Absence.Datefin">
+            <summary>
+            Getter : datefin (format: jj/mm/aaaa)
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Absence.Idpersonnel">
+            <summary>
+            Getter : idpersonnel
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Absence.Idmotif">
+            <summary>
+            Getter : idmotif
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Absence.Motif">
+            <summary>
+            Getter : motif
+            </summary>
+        </member>
+        <member name="M:MediaTek.modele.Absence.#ctor(System.DateTime,System.DateTime,System.Int32,System.Int32,System.String)">
+            <summary>
+            Constructeur : valorise les propriétés
+            </summary>
+            <param name="datedebut"></param>
+            <param name="datefin"></param>
+            <param name="idpersonnel"></param>
+            <param name="idmotif"></param>
+            <param name="motif"></param>
+        </member>
+        <member name="T:MediaTek.modele.Motif">
+            <summary>
+            Classe métier correspondant à la table "Motif" de la base de données
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Motif.Idmotif">
+            <summary>
+            Getter : idmotif
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Motif.Libelle">
+            <summary>
+            Getter : libelle
+            </summary>
+        </member>
+        <member name="M:MediaTek.modele.Motif.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructeur : valorise les propriétés
+            </summary>
+            <param name="idmotif"></param>
+            <param name="libelle"></param>
+        </member>
+        <member name="M:MediaTek.modele.Motif.ToString">
+            <summary>
+            Définit l'information à afficher : libelle
+            </summary>
+            <returns>nom du motif</returns>
+        </member>
+        <member name="T:MediaTek.modele.Personnel">
+            <summary>
+            Classe métier correspondant à la table "Personnel" de la base de données
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Personnel.Idpersonnel">
+            <summary>
+            Getter : idpersonnel
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Personnel.Nom">
+            <summary>
+            Getter : nom
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Personnel.Prenom">
+            <summary>
+            Getter : prenom
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Personnel.Tel">
+            <summary>
+            Getter : tel
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Personnel.Mail">
+            <summary>
+            Getter : mail
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Personnel.Idservice">
+            <summary>
+            Getter : idservice
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Personnel.Service">
+            <summary>
+            Getter : service
+            </summary>
+        </member>
+        <member name="M:MediaTek.modele.Personnel.#ctor(System.Int32,System.String,System.String,System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Constructeur : valorise les propriétés
+            </summary>
+            <param name="idpersonnel"></param>
+            <param name="nom"></param>
+            <param name="prenom"></param>
+            <param name="tel"></param>
+            <param name="mail"></param>
+            <param name="idservice"></param>
+            <param name="service"></param>
+        </member>
+        <member name="T:MediaTek.modele.Service">
+            <summary>
+            Classe métier correspondant à la table "Service" de la base de données
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Service.Idservice">
+            <summary>
+            Getter : idservice
+            </summary>
+        </member>
+        <member name="P:MediaTek.modele.Service.Nom">
+            <summary>
+            Getter : nom
+            </summary>
+        </member>
+        <member name="M:MediaTek.modele.Service.#ctor(System.Int32,System.String)">
+            <summary>
+            Constructeur : valorise les propriétés
+            </summary>
+            <param name="idservice"></param>
+            <param name="nom"></param>
+        </member>
+        <member name="M:MediaTek.modele.Service.ToString">
+            <summary>
+            Définit l'information à afficher : nom
+            </summary>
+            <returns>nom du service</returns>
+        </member>
         <member name="F:Mediatek.dal.AccesDonnees.connectionString">
             <summary>
             Chaine de connexion à la BDD
             </summary>
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.Authentification(System.String,System.String)">
+            <summary>
+            Authentification (login/pwd)
+            </summary>
+            <param name="login"></param>
+            <param name="pwd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.GetLesPersonnels">
+            <summary>
+            Récupère et retourne les personnels provenant de la BDD
+            </summary>
+            <returns>liste des personnels</returns>
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.GetLesServices">
+            <summary>
+            Récupère et retourne les services provenant de la BDD
+            </summary>
+            <returns>liste des services</returns>
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.AddPersonnel(MediaTek.modele.Personnel)">
+            <summary>
+            Ajoute un personnel
+            </summary>
+            <param name="personnel">objet de type personnel à ajouter</param>
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.DelPersonnel(System.Int32)">
+            <summary>
+            Suppression d'un personnel
+            </summary>
+            <param name="idpersonnel">idpersonnel du personnel sélectionné</param>
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.UpdatePersonnel(MediaTek.modele.Personnel)">
+            <summary>
+            Modification d'un personnel
+            </summary>
+            <param name="personnel">objet de type personnel à modifier</param>
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.GetLesAbsences(System.Int32)">
+            <summary>
+            Récupère et retourne les absences du personnel sélectionné provenant de la BDD
+            </summary>
+            <param name="idpersonnel">idpersonnel du personnel sélectionné</param>
+            <returns>liste des absences</returns>
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.GetLesMotifs">
+            <summary>
+            Récupère et retourne les motifs provenant de la BDD
+            </summary>
+            <returns>liste des services</returns>
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.AddAbsence(MediaTek.modele.Absence,System.Int32)">
+            <summary>
+            Ajoute une absence
+            </summary>
+            <param name="absence">objet de type absence à ajouter</param>
+            <param name="idpersonnel">idpersonnel du personnel sélectionné</param> 
+        </member>
+        <member name="M:Mediatek.dal.AccesDonnees.DelAbsence(MediaTek.modele.Absence,System.Int32)">
+            <summary>
+            Suppression d'une absence
+            </summary>
+            <param name="absence">objet de type absence à supprimer</param>
+            /// <param name="idpersonnel">idpersonnel du personnel sélectionné</param>
         </member>
         <member name="F:Mediatek.frmGestionPersonnel.components">
             <summary>
@@ -132,6 +345,11 @@
             <summary>
               Remplace la propriété CurrentUICulture du thread actuel pour toutes
               les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+            </summary>
+        </member>
+        <member name="P:Mediatek.Properties.Resources.imglogin">
+            <summary>
+              Recherche une ressource localisée de type System.Drawing.Bitmap.
             </summary>
         </member>
     </members>

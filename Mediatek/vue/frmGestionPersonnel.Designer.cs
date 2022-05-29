@@ -37,7 +37,7 @@ namespace Mediatek
             this.lbTel = new System.Windows.Forms.Label();
             this.lbMail = new System.Windows.Forms.Label();
             this.lbService = new System.Windows.Forms.Label();
-            this.cboService = new System.Windows.Forms.ComboBox();
+            this.cboBoxService = new System.Windows.Forms.ComboBox();
             this.txtNom = new System.Windows.Forms.TextBox();
             this.txtPrenom = new System.Windows.Forms.TextBox();
             this.txtTel = new System.Windows.Forms.TextBox();
@@ -48,6 +48,7 @@ namespace Mediatek
             this.btnModif = new System.Windows.Forms.Button();
             this.btnSupp = new System.Windows.Forms.Button();
             this.grpBtn = new System.Windows.Forms.GroupBox();
+            this.btnVider = new System.Windows.Forms.Button();
             this.grpSaisie.SuspendLayout();
             this.grpBtn.SuspendLayout();
             this.SuspendLayout();
@@ -55,9 +56,9 @@ namespace Mediatek
             // lstPersonnel
             // 
             this.lstPersonnel.FormattingEnabled = true;
-            this.lstPersonnel.Location = new System.Drawing.Point(372, 98);
+            this.lstPersonnel.Location = new System.Drawing.Point(372, 72);
             this.lstPersonnel.Name = "lstPersonnel";
-            this.lstPersonnel.Size = new System.Drawing.Size(446, 446);
+            this.lstPersonnel.Size = new System.Drawing.Size(446, 498);
             this.lstPersonnel.TabIndex = 0;
             // 
             // lbGestion
@@ -66,7 +67,7 @@ namespace Mediatek
             this.lbGestion.BackColor = System.Drawing.Color.Teal;
             this.lbGestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGestion.ForeColor = System.Drawing.Color.White;
-            this.lbGestion.Location = new System.Drawing.Point(21, 28);
+            this.lbGestion.Location = new System.Drawing.Point(59, 28);
             this.lbGestion.Name = "lbGestion";
             this.lbGestion.Size = new System.Drawing.Size(239, 25);
             this.lbGestion.TabIndex = 1;
@@ -78,7 +79,7 @@ namespace Mediatek
             this.lbInfo.BackColor = System.Drawing.Color.Teal;
             this.lbInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbInfo.ForeColor = System.Drawing.Color.White;
-            this.lbInfo.Location = new System.Drawing.Point(346, 28);
+            this.lbInfo.Location = new System.Drawing.Point(440, 28);
             this.lbInfo.Name = "lbInfo";
             this.lbInfo.Size = new System.Drawing.Size(287, 25);
             this.lbInfo.TabIndex = 2;
@@ -134,13 +135,13 @@ namespace Mediatek
             this.lbService.TabIndex = 7;
             this.lbService.Text = "Service";
             // 
-            // cboService
+            // cboBoxService
             // 
-            this.cboService.FormattingEnabled = true;
-            this.cboService.Location = new System.Drawing.Point(25, 150);
-            this.cboService.Name = "cboService";
-            this.cboService.Size = new System.Drawing.Size(295, 21);
-            this.cboService.TabIndex = 8;
+            this.cboBoxService.FormattingEnabled = true;
+            this.cboBoxService.Location = new System.Drawing.Point(25, 150);
+            this.cboBoxService.Name = "cboBoxService";
+            this.cboBoxService.Size = new System.Drawing.Size(295, 21);
+            this.cboBoxService.TabIndex = 8;
             // 
             // txtNom
             // 
@@ -173,25 +174,27 @@ namespace Mediatek
             // grpSaisie
             // 
             this.grpSaisie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.grpSaisie.Controls.Add(this.btnVider);
             this.grpSaisie.Controls.Add(this.txtMail);
             this.grpSaisie.Controls.Add(this.txtTel);
             this.grpSaisie.Controls.Add(this.txtPrenom);
             this.grpSaisie.Controls.Add(this.txtNom);
-            this.grpSaisie.Controls.Add(this.cboService);
+            this.grpSaisie.Controls.Add(this.cboBoxService);
             this.grpSaisie.Controls.Add(this.lbService);
             this.grpSaisie.Controls.Add(this.lbMail);
             this.grpSaisie.Controls.Add(this.lbTel);
             this.grpSaisie.Controls.Add(this.lbPrenom);
             this.grpSaisie.Controls.Add(this.lbNom);
-            this.grpSaisie.Location = new System.Drawing.Point(12, 98);
+            this.grpSaisie.Location = new System.Drawing.Point(12, 71);
             this.grpSaisie.Name = "grpSaisie";
-            this.grpSaisie.Size = new System.Drawing.Size(350, 203);
+            this.grpSaisie.Size = new System.Drawing.Size(350, 247);
             this.grpSaisie.TabIndex = 13;
             this.grpSaisie.TabStop = false;
             // 
             // btnAjt
             // 
             this.btnAjt.BackColor = System.Drawing.Color.Teal;
+            this.btnAjt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjt.ForeColor = System.Drawing.Color.White;
             this.btnAjt.Location = new System.Drawing.Point(25, 19);
@@ -204,7 +207,8 @@ namespace Mediatek
             // btnAbs
             // 
             this.btnAbs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAbs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAbs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAbs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbs.ForeColor = System.Drawing.Color.White;
             this.btnAbs.Location = new System.Drawing.Point(24, 151);
             this.btnAbs.Name = "btnAbs";
@@ -216,6 +220,7 @@ namespace Mediatek
             // btnModif
             // 
             this.btnModif.BackColor = System.Drawing.Color.Gray;
+            this.btnModif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModif.ForeColor = System.Drawing.Color.White;
             this.btnModif.Location = new System.Drawing.Point(25, 86);
@@ -228,6 +233,7 @@ namespace Mediatek
             // btnSupp
             // 
             this.btnSupp.BackColor = System.Drawing.Color.Maroon;
+            this.btnSupp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSupp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupp.ForeColor = System.Drawing.Color.White;
             this.btnSupp.Location = new System.Drawing.Point(174, 86);
@@ -244,17 +250,32 @@ namespace Mediatek
             this.grpBtn.Controls.Add(this.btnModif);
             this.grpBtn.Controls.Add(this.btnAbs);
             this.grpBtn.Controls.Add(this.btnAjt);
-            this.grpBtn.Location = new System.Drawing.Point(12, 333);
+            this.grpBtn.Location = new System.Drawing.Point(12, 359);
             this.grpBtn.Name = "grpBtn";
             this.grpBtn.Size = new System.Drawing.Size(350, 211);
             this.grpBtn.TabIndex = 18;
             this.grpBtn.TabStop = false;
             // 
+            // btnVider
+            // 
+            this.btnVider.BackColor = System.Drawing.Color.Gray;
+            this.btnVider.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnVider.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnVider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVider.ForeColor = System.Drawing.Color.White;
+            this.btnVider.Location = new System.Drawing.Point(26, 192);
+            this.btnVider.Name = "btnVider";
+            this.btnVider.Size = new System.Drawing.Size(75, 28);
+            this.btnVider.TabIndex = 19;
+            this.btnVider.Text = "VIDER";
+            this.btnVider.UseVisualStyleBackColor = false;
+            // 
             // frmGestionPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(830, 561);
+            this.ClientSize = new System.Drawing.Size(830, 588);
             this.Controls.Add(this.grpBtn);
             this.Controls.Add(this.grpSaisie);
             this.Controls.Add(this.lbInfo);
@@ -280,7 +301,7 @@ namespace Mediatek
         private System.Windows.Forms.Label lbTel;
         private System.Windows.Forms.Label lbMail;
         private System.Windows.Forms.Label lbService;
-        private System.Windows.Forms.ComboBox cboService;
+        private System.Windows.Forms.ComboBox cboBoxService;
         private System.Windows.Forms.TextBox txtNom;
         private System.Windows.Forms.TextBox txtPrenom;
         private System.Windows.Forms.TextBox txtTel;
@@ -291,6 +312,7 @@ namespace Mediatek
         private System.Windows.Forms.Button btnModif;
         private System.Windows.Forms.Button btnSupp;
         private System.Windows.Forms.GroupBox grpBtn;
+        private System.Windows.Forms.Button btnVider;
     }
 }
 
