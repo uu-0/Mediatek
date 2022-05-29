@@ -32,11 +32,11 @@ namespace Mediatek.vue
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnConnect = new System.Windows.Forms.Button();
             this.txtPwd = new System.Windows.Forms.TextBox();
-            this.txtLogin = new System.Windows.Forms.TextBox();
             this.chkboxPwd = new System.Windows.Forms.CheckBox();
             this.lbMdp = new System.Windows.Forms.Label();
             this.lbLogin = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txtLogin = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,9 +44,9 @@ namespace Mediatek.vue
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.txtLogin);
             this.groupBox1.Controls.Add(this.btnConnect);
             this.groupBox1.Controls.Add(this.txtPwd);
-            this.groupBox1.Controls.Add(this.txtLogin);
             this.groupBox1.Controls.Add(this.chkboxPwd);
             this.groupBox1.Controls.Add(this.lbMdp);
             this.groupBox1.Controls.Add(this.lbLogin);
@@ -59,6 +59,8 @@ namespace Mediatek.vue
             // btnConnect
             // 
             this.btnConnect.BackColor = System.Drawing.Color.Gray;
+            this.btnConnect.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnConnect.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnConnect.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConnect.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnConnect.ForeColor = System.Drawing.Color.White;
@@ -76,13 +78,6 @@ namespace Mediatek.vue
             this.txtPwd.Name = "txtPwd";
             this.txtPwd.Size = new System.Drawing.Size(213, 20);
             this.txtPwd.TabIndex = 4;
-            // 
-            // txtLogin
-            // 
-            this.txtLogin.Location = new System.Drawing.Point(10, 53);
-            this.txtLogin.Name = "txtLogin";
-            this.txtLogin.Size = new System.Drawing.Size(213, 20);
-            this.txtLogin.TabIndex = 3;
             // 
             // chkboxPwd
             // 
@@ -110,7 +105,7 @@ namespace Mediatek.vue
             // 
             this.lbLogin.AutoSize = true;
             this.lbLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLogin.Location = new System.Drawing.Point(6, 30);
+            this.lbLogin.Location = new System.Drawing.Point(6, 45);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(130, 20);
             this.lbLogin.TabIndex = 0;
@@ -126,7 +121,14 @@ namespace Mediatek.vue
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // frmLogin
+            // txtLogin
+            // 
+            this.txtLogin.Location = new System.Drawing.Point(10, 68);
+            this.txtLogin.Name = "txtLogin";
+            this.txtLogin.Size = new System.Drawing.Size(213, 20);
+            this.txtLogin.TabIndex = 6;
+            // 
+            // frmGestionPersonnel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -134,7 +136,7 @@ namespace Mediatek.vue
             this.ClientSize = new System.Drawing.Size(624, 301);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "frmLogin";
+            this.Name = "frmGestionPersonnel";
             this.Text = "Connexion";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -150,8 +152,8 @@ namespace Mediatek.vue
         private System.Windows.Forms.Label lbLogin;
         private System.Windows.Forms.Button btnConnect;
         private System.Windows.Forms.TextBox txtPwd;
-        private System.Windows.Forms.TextBox txtLogin;
         private System.Windows.Forms.CheckBox chkboxPwd;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtLogin;
     }
 }

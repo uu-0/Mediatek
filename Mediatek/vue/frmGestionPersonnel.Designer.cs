@@ -196,8 +196,8 @@ namespace Mediatek
             // 
             this.btnVider.BackColor = System.Drawing.Color.Gray;
             this.btnVider.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnVider.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnVider.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btnVider.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnVider.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnVider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnVider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVider.ForeColor = System.Drawing.Color.White;
@@ -226,8 +226,8 @@ namespace Mediatek
             // btnAbs
             // 
             this.btnAbs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnAbs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnAbs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
+            this.btnAbs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnAbs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnAbs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbs.ForeColor = System.Drawing.Color.White;
@@ -241,8 +241,8 @@ namespace Mediatek
             // btnModif
             // 
             this.btnModif.BackColor = System.Drawing.Color.Gray;
-            this.btnModif.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnModif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btnModif.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnModif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnModif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModif.ForeColor = System.Drawing.Color.White;
@@ -256,8 +256,8 @@ namespace Mediatek
             // btnSupp
             // 
             this.btnSupp.BackColor = System.Drawing.Color.Maroon;
-            this.btnSupp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
-            this.btnSupp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
+            this.btnSupp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSupp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnSupp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSupp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupp.ForeColor = System.Drawing.Color.White;
