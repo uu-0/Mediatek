@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using MediaTek.controleur;
+using System;
 using System.Windows.Forms;
 
 namespace Mediatek
@@ -16,7 +14,7 @@ namespace Mediatek
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGestionPersonnel());
+            new Controle();
         }
     }
 }

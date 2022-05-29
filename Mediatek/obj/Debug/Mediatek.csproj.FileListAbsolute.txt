@@ -13,7 +13,6 @@ C:\MediatekMaster\Mediatek\bin\Debug\Mediatek.pdb
 C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.csproj.AssemblyReference.cache
 C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.Properties.Resources.resources
 C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.frmGestionPersonnel.resources
-C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.vue.frmLogin.resources
 C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.csproj.GenerateResource.cache
 C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.csproj.CoreCompileInputs.cache
 C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.exe
@@ -42,3 +41,4 @@ C:\MediatekMaster\Mediatek\bin\Debug\System.Numerics.Vectors.xml
 C:\MediatekMaster\Mediatek\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.csproj.CopyComplete
 C:\MediatekMaster\Mediatek\bin\Debug\Mediatek.xml
+C:\MediatekMaster\Mediatek\obj\Debug\Mediatek.vue.frmGestionPersonnel.resources

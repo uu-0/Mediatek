@@ -6,7 +6,7 @@ namespace Mediatek.vue
     /// <summary>
     /// Fenêtre d'authentification (seuls les admin peuvent accéder à l'application)
     /// </summary>
-    public partial class frmLogin : Form
+    public partial class frmGestionPersonnel : Form
     {
 
         /// <summary>
@@ -18,7 +18,7 @@ namespace Mediatek.vue
         /// Initialisation des composants graphiques et écupération du contrôleur
         /// </summary>
         /// <param name="controle"></param>
-        public frmLogin(Controle controle)
+        public frmGestionPersonnel(Controle controle)
         {
             InitializeComponent();
             this.controle = controle;

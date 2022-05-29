@@ -44,12 +44,12 @@ namespace Mediatek
             this.txtTel = new System.Windows.Forms.TextBox();
             this.txtMail = new System.Windows.Forms.TextBox();
             this.grpSaisie = new System.Windows.Forms.GroupBox();
+            this.btnVider = new System.Windows.Forms.Button();
             this.btnAjt = new System.Windows.Forms.Button();
             this.btnAbs = new System.Windows.Forms.Button();
             this.btnModif = new System.Windows.Forms.Button();
             this.btnSupp = new System.Windows.Forms.Button();
             this.grpBtn = new System.Windows.Forms.GroupBox();
-            this.btnVider = new System.Windows.Forms.Button();
             this.grpSaisie.SuspendLayout();
             this.grpBtn.SuspendLayout();
             this.SuspendLayout();
@@ -186,15 +186,33 @@ namespace Mediatek
             this.grpSaisie.Controls.Add(this.lbTel);
             this.grpSaisie.Controls.Add(this.lbPrenom);
             this.grpSaisie.Controls.Add(this.lbNom);
-            this.grpSaisie.Location = new System.Drawing.Point(12, 71);
+            this.grpSaisie.Location = new System.Drawing.Point(16, 72);
             this.grpSaisie.Name = "grpSaisie";
-            this.grpSaisie.Size = new System.Drawing.Size(350, 247);
+            this.grpSaisie.Size = new System.Drawing.Size(350, 242);
             this.grpSaisie.TabIndex = 13;
             this.grpSaisie.TabStop = false;
+            // 
+            // btnVider
+            // 
+            this.btnVider.BackColor = System.Drawing.Color.Gray;
+            this.btnVider.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
+            this.btnVider.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnVider.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btnVider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVider.ForeColor = System.Drawing.Color.White;
+            this.btnVider.Location = new System.Drawing.Point(26, 190);
+            this.btnVider.Name = "btnVider";
+            this.btnVider.Size = new System.Drawing.Size(75, 28);
+            this.btnVider.TabIndex = 19;
+            this.btnVider.Text = "VIDER";
+            this.btnVider.UseVisualStyleBackColor = false;
             // 
             // btnAjt
             // 
             this.btnAjt.BackColor = System.Drawing.Color.Teal;
+            this.btnAjt.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAjt.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnAjt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAjt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAjt.ForeColor = System.Drawing.Color.White;
@@ -208,6 +226,8 @@ namespace Mediatek
             // btnAbs
             // 
             this.btnAbs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAbs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnAbs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray;
             this.btnAbs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAbs.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAbs.ForeColor = System.Drawing.Color.White;
@@ -221,6 +241,8 @@ namespace Mediatek
             // btnModif
             // 
             this.btnModif.BackColor = System.Drawing.Color.Gray;
+            this.btnModif.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnModif.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnModif.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModif.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModif.ForeColor = System.Drawing.Color.White;
@@ -234,6 +256,8 @@ namespace Mediatek
             // btnSupp
             // 
             this.btnSupp.BackColor = System.Drawing.Color.Maroon;
+            this.btnSupp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkRed;
+            this.btnSupp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkRed;
             this.btnSupp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSupp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSupp.ForeColor = System.Drawing.Color.White;
@@ -256,21 +280,6 @@ namespace Mediatek
             this.grpBtn.Size = new System.Drawing.Size(350, 211);
             this.grpBtn.TabIndex = 18;
             this.grpBtn.TabStop = false;
-            // 
-            // btnVider
-            // 
-            this.btnVider.BackColor = System.Drawing.Color.Gray;
-            this.btnVider.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
-            this.btnVider.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnVider.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVider.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVider.ForeColor = System.Drawing.Color.White;
-            this.btnVider.Location = new System.Drawing.Point(26, 192);
-            this.btnVider.Name = "btnVider";
-            this.btnVider.Size = new System.Drawing.Size(75, 28);
-            this.btnVider.TabIndex = 19;
-            this.btnVider.Text = "VIDER";
-            this.btnVider.UseVisualStyleBackColor = false;
             // 
             // frmGestionPersonnel
             // 
@@ -312,8 +321,8 @@ namespace Mediatek
         private System.Windows.Forms.Button btnAbs;
         private System.Windows.Forms.Button btnModif;
         private System.Windows.Forms.Button btnSupp;
-        private System.Windows.Forms.GroupBox grpBtn;
         private System.Windows.Forms.Button btnVider;
+        private System.Windows.Forms.GroupBox grpBtn;
     }
 }
 

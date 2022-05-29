@@ -52,13 +52,7 @@ namespace Mediatek
         /// </summary>
         public void Init()
         {
-            //remplissage liste
-            RemplirListePersonnel();
-            RemplirComboService();
 
-            //affichage composant graph
-            show = false;
-            ShowComponents(show);
         }
 
     }

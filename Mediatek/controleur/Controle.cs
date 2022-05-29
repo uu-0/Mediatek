@@ -1,4 +1,5 @@
-﻿using Mediatek.dal;
+﻿using Mediatek;
+using Mediatek.dal;
 using Mediatek.vue;
 using MediaTek.modele;
 using System;
@@ -14,14 +15,14 @@ namespace MediaTek.controleur
         /// <summary>
         /// Fenêtre d'authentification
         /// </summary>
-        private frmLogin frmLogin;
+        private Mediatek.vue.frmGestionPersonnel frmLogin;
 
         /// <summary>
         /// Ouverture de la fenêtre
         /// </summary>
         public Controle()
         {
-            frmLogin = new frmLogin(this);
+            frmLogin = new Mediatek.vue.frmGestionPersonnel(this);
             frmLogin.ShowDialog();
         }
 
@@ -37,7 +38,7 @@ namespace MediaTek.controleur
             if (AccesDonnees.Authentification(login, pwd))
             {
                 frmLogin.Hide();
-                (new frmGestionPersonnel(this)).ShowDialog();
+                (new Mediatek.frmGestionPersonnel(this)).ShowDialog();
                 return true;
             }
             else

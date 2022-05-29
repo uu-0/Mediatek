@@ -1,7 +1,7 @@
 ﻿
 namespace Mediatek.vue
 {
-    partial class frmLogin
+    partial class frmGestionPersonnel
     {
         /// <summary>
         /// Required designer variable.

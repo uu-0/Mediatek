@@ -74,6 +74,87 @@
             Fermeture du curseur
             </summary>
         </member>
+        <member name="T:MediaTek.controleur.Controle">
+            <summary>
+            Gère les intéractions entre le modèle et la vue
+            </summary>
+        </member>
+        <member name="F:MediaTek.controleur.Controle.frmLogin">
+            <summary>
+            Fenêtre d'authentification
+            </summary>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.#ctor">
+            <summary>
+            Ouverture de la fenêtre
+            </summary>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.Authentification(System.String,System.String)">
+            <summary>
+            Demande la vérification de l'authentification
+            Si login/pwd sont corrects, ouverture de la fenêtre principale
+            </summary>
+            <param name="login"></param>
+            <param name="pwd"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.GetLesPersonnels">
+            <summary>
+            Récupère et retourne les infos du personnel provenant de la BDD
+            </summary>
+            <returns>liste des personnels</returns>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.GetLesServices">
+            <summary>
+            Récupère et retourne les infos des services provenant de la BDD
+            </summary>
+            <returns>liste des services</returns>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.AddPersonnel(MediaTek.modele.Personnel)">
+            <summary>
+            Demande d'ajout d'un personnel
+            </summary>
+            <param name="personnel">objet de type personnel à ajouter</param>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.DelPersonnel(System.Int32)">
+            <summary>
+            Demande de suppression d'un personnel
+            </summary>
+            <param name="idpersonnel">id du personnel à supprimer</param>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.UpdatePersonnel(MediaTek.modele.Personnel)">
+            <summary>
+            Demande de modification d'un personnel
+            </summary>
+            <param name="personnel">objet de type personnel à modifier</param>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.GetLesAbsences(System.Int32)">
+            <summary>
+            Récupère et retourne les infos des absences provenant de la BDD
+            </summary>
+            <param name="idpersonnel">id du personnel dont les informations sont récupérées</param>
+            <returns>liste des absences</returns>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.GetLesMotifs">
+            <summary>
+            Récupère et retourne les infos des motifs provenant de la BDD
+            </summary>
+            <returns>liste des motifs</returns>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.AddAbsence(MediaTek.modele.Absence,System.Int32)">
+            <summary>
+            Demande d'ajout d'une absence
+            </summary>
+            <param name="absence">objet de type absence à ajouter</param>
+            <param name="idpersonnel">id du personnel à qui on ajoute une absence</param>
+        </member>
+        <member name="M:MediaTek.controleur.Controle.DelAbsence(MediaTek.modele.Absence,System.Int32)">
+            <summary>
+            Demande de suppression d'une absence
+            </summary>
+            <param name="absence">objet de type absence à supprimer</param>
+            <param name="idpersonnel">id du personnel à qui on supprime une absence</param>
+        </member>
         <member name="T:MediaTek.modele.Absence">
             <summary>
             Classe métier correspondant à la table "Absence" de la base de données
@@ -292,6 +373,48 @@
             <param name="absence">objet de type absence à supprimer</param>
             /// <param name="idpersonnel">idpersonnel du personnel sélectionné</param>
         </member>
+        <member name="T:Mediatek.frmGestionPersonnel">
+            <summary>
+            Fenêtre d'affichage des personnels et de leurs informations
+            </summary>
+        </member>
+        <member name="F:Mediatek.frmGestionPersonnel.controle">
+            <summary>
+            instance du controleur
+            </summary>
+        </member>
+        <member name="F:Mediatek.frmGestionPersonnel.bdgPersonnel">
+            <summary>
+            Objet pour gérer la liste des développeurs
+            </summary>
+        </member>
+        <member name="F:Mediatek.frmGestionPersonnel.bdgService">
+            <summary>
+            Objet pour gérer la liste des profils
+            </summary>
+        </member>
+        <member name="F:Mediatek.frmGestionPersonnel.bdgAbsence">
+            <summary>
+            Objet pour gérer la liste des absences
+            </summary>
+        </member>
+        <member name="F:Mediatek.frmGestionPersonnel.bdgMotifs">
+            <summary>
+            Objet pour gérer la liste des motifs
+            </summary>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.#ctor(MediaTek.controleur.Controle)">
+            <summary>
+            Initialisation des composants graphiques
+            Récupération du controleur
+            </summary>
+            <param name="controle"></param>
+        </member>
+        <member name="M:Mediatek.frmGestionPersonnel.Init">
+            <summary>
+            Initialisation de la frame : remplissage des listes
+            </summary>
+        </member>
         <member name="F:Mediatek.frmGestionPersonnel.components">
             <summary>
             Variable nécessaire au concepteur.
@@ -314,18 +437,48 @@
             Point d'entrée principal de l'application.
             </summary>
         </member>
-        <member name="F:Mediatek.vue.frmLogin.components">
+        <member name="T:Mediatek.vue.frmGestionPersonnel">
+            <summary>
+            Fenêtre d'authentification (seuls les admin peuvent accéder à l'application)
+            </summary>
+        </member>
+        <member name="F:Mediatek.vue.frmGestionPersonnel.controle">
+            <summary>
+            Instance du controleur
+            </summary>
+        </member>
+        <member name="M:Mediatek.vue.frmGestionPersonnel.#ctor(MediaTek.controleur.Controle)">
+            <summary>
+            Initialisation des composants graphiques et écupération du contrôleur
+            </summary>
+            <param name="controle"></param>
+        </member>
+        <member name="M:Mediatek.vue.frmGestionPersonnel.chcPwd_CheckedChanged(System.Object,System.EventArgs)">
+            <summary>
+            Contrôle si checkBox est coché, si oui le mdp est affiché
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Mediatek.vue.frmGestionPersonnel.btnConnect_Click(System.Object,System.EventArgs)">
+            <summary>
+            Demande au controleur de controler l'authentification
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="F:Mediatek.vue.frmGestionPersonnel.components">
             <summary>
             Required designer variable.
             </summary>
         </member>
-        <member name="M:Mediatek.vue.frmLogin.Dispose(System.Boolean)">
+        <member name="M:Mediatek.vue.frmGestionPersonnel.Dispose(System.Boolean)">
             <summary>
             Clean up any resources being used.
             </summary>
             <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         </member>
-        <member name="M:Mediatek.vue.frmLogin.InitializeComponent">
+        <member name="M:Mediatek.vue.frmGestionPersonnel.InitializeComponent">
             <summary>
             Required method for Designer support - do not modify
             the contents of this method with the code editor.
