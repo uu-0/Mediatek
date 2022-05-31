@@ -6,7 +6,7 @@ using System.Windows.Forms;
 namespace MediaTek.connexion
 {
     /// <summary>
-    /// Connexion à la base de données et exécution des requêtes
+    /// Connexion à la base de données + exécution des requêtes
     /// </summary>
     public class ConnexionBDD
     {
@@ -34,7 +34,7 @@ namespace MediaTek.connexion
         }
 
         /// <summary>
-        /// Unique instance de la classe
+        /// Seule instance de la classe
         /// </summary>
         private static ConnexionBDD instance = null;
 
