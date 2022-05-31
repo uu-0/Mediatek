@@ -138,7 +138,7 @@ namespace Mediatek
         }
 
         /// <summary>
-        /// Rempli la comboBox ServiceS
+        /// Rempli la comboBox Service
         /// </summary>
         public void RemplirComboBoxService()
         {
@@ -208,13 +208,11 @@ namespace Mediatek
                 //si les champs ne sont pas vides et q'un champs est séléctionné dans cboBoxService
                 if (!txtNom.Text.Equals("") && !txtPrenom.Text.Equals("") && !txtTel.Text.Equals("") && !txtMail.Text.Equals("") && cboBoxService.SelectedIndex != -1)
                 {
-                    //car autoincremente dans BD
                     int idpersonnel = 0;
                     Service service = (Service)bdgService.List[bdgService.Position];
                     Personnel personnel = new Personnel(idpersonnel, txtNom.Text, txtPrenom.Text, txtTel.Text, txtMail.Text, service.Idservice, service.Nom);
                     controle.AddPersonnel(personnel);
 
-                    // test si une ligne a été ajoutée
                     int nbRecord = lstPersonnel.Rows.Count;
                     RemplirListePersonnel();
                     if (nbRecord < lstPersonnel.Rows.Count)
@@ -246,7 +244,6 @@ namespace Mediatek
                     Absence absence = new Absence(dateTimeDebut.Value, dateTimeFin.Value, personnel.Idpersonnel, motif.Idmotif, motif.Libelle);
                     controle.AddAbsence(absence, personnel.Idpersonnel);
 
-                    // Test si une ligne a été ajoutée
                     int nbRecord = lstAbs.Rows.Count;
                     RemplirListeAbsence();
                     if (nbRecord < lstAbs.Rows.Count)

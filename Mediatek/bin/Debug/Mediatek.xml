@@ -6,7 +6,7 @@
     <members>
         <member name="T:MediaTek.connexion.ConnexionBDD">
             <summary>
-            Connexion à la base de données et exécution des requêtes
+            Connexion à la base de données + exécution des requêtes
             </summary>
         </member>
         <member name="F:MediaTek.connexion.ConnexionBDD.connection">
@@ -22,7 +22,7 @@
         </member>
         <member name="F:MediaTek.connexion.ConnexionBDD.instance">
             <summary>
-            Unique instance de la classe
+            Seule instance de la classe
             </summary>
         </member>
         <member name="M:MediaTek.connexion.ConnexionBDD.GetInstance(System.String)">
@@ -567,7 +567,7 @@
         </member>
         <member name="M:Mediatek.frmGestionPersonnel.ShowComponents(System.Boolean)">
             <summary>
-            Affiche/Cache les composants graphiques
+            affiche ou cache les composants graphiques
             </summary>
             <param name="show"></param>
         </member>
