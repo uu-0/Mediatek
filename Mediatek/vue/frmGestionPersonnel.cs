@@ -69,7 +69,7 @@ namespace Mediatek
         }
 
         /// <summary>
-        /// Affiche/Cache les composants graphiques
+        /// affiche ou cache les composants graphiques
         /// </summary>
         /// <param name="show"></param>
         public void ShowComponents(bool show)
@@ -107,7 +107,7 @@ namespace Mediatek
             }
             else
             {
-                // GESTION DES ABSENCES
+                // Absence
                 btnRef.Location = new Point(287, 204);
                 btnVider.Location = new Point(26, 214);
                 lbGestion.Location = new Point(48, 12);
