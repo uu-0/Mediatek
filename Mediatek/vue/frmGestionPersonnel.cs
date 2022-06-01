@@ -93,7 +93,6 @@ namespace Mediatek
             if (!show)
             {
                 // Personnel
-                btnRef.Location = new Point(287, 204);
                 btnVider.Location = new Point(26, 214);
                 lbGestion.Location = new Point(48, 12);
                 lbInfo.Location = new Point(128, 12);
@@ -108,7 +107,6 @@ namespace Mediatek
             else
             {
                 // Absence
-                btnRef.Location = new Point(287, 204);
                 btnVider.Location = new Point(26, 214);
                 lbGestion.Location = new Point(48, 12);
                 lbInfo.Location = new Point(148, 12);

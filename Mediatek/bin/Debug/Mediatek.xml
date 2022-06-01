@@ -619,13 +619,6 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:Mediatek.frmGestionPersonnel.btnRef_Click(System.Object,System.EventArgs)">
-            <summary>
-            MAJ des données de la BD
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
         <member name="M:Mediatek.frmGestionPersonnel.btnVider_Click(System.Object,System.EventArgs)">
             <summary>
             Vide les champs
