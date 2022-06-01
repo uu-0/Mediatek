@@ -24,10 +24,6 @@ MediaTek86 est une application de bureau (Windows forms C#) développée lors de
 
 • Dépploiement de l'application, rédaction du compte rendu du PPE, création de la page du portfolio dédiée à la mission
 
-# Tutoriel
-
-à ajt
-
 # Portfolio
 àfinir et ajt
 
