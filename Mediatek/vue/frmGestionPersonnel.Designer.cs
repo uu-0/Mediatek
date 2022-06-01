@@ -52,7 +52,6 @@ namespace Mediatek
             this.lstPersonnel = new System.Windows.Forms.DataGridView();
             this.lstAbs = new System.Windows.Forms.DataGridView();
             this.grpSaisie = new System.Windows.Forms.GroupBox();
-            this.btnRef = new System.Windows.Forms.Button();
             this.cboBoxMotif = new System.Windows.Forms.ComboBox();
             this.lbMotif = new System.Windows.Forms.Label();
             this.dateTimeFin = new System.Windows.Forms.DateTimePicker();
@@ -300,7 +299,6 @@ namespace Mediatek
             // grpSaisie
             // 
             this.grpSaisie.BackColor = System.Drawing.Color.Gainsboro;
-            this.grpSaisie.Controls.Add(this.btnRef);
             this.grpSaisie.Controls.Add(this.cboBoxMotif);
             this.grpSaisie.Controls.Add(this.lbMotif);
             this.grpSaisie.Controls.Add(this.dateTimeFin);
@@ -323,22 +321,6 @@ namespace Mediatek
             this.grpSaisie.Size = new System.Drawing.Size(350, 258);
             this.grpSaisie.TabIndex = 13;
             this.grpSaisie.TabStop = false;
-            // 
-            // btnRef
-            // 
-            this.btnRef.BackgroundImage = global::Mediatek.Properties.Resources.refresh;
-            this.btnRef.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRef.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnRef.FlatAppearance.BorderSize = 0;
-            this.btnRef.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
-            this.btnRef.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
-            this.btnRef.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRef.Location = new System.Drawing.Point(287, 204);
-            this.btnRef.Name = "btnRef";
-            this.btnRef.Size = new System.Drawing.Size(36, 38);
-            this.btnRef.TabIndex = 24;
-            this.btnRef.UseVisualStyleBackColor = true;
-            this.btnRef.Click += new System.EventHandler(this.btnRef_Click);
             // 
             // cboBoxMotif
             // 
@@ -481,7 +463,6 @@ namespace Mediatek
         private System.Windows.Forms.DataGridView lstPersonnel;
         private System.Windows.Forms.DataGridView lstAbs;
         private System.Windows.Forms.GroupBox grpSaisie;
-        private System.Windows.Forms.Button btnRef;
         private System.Windows.Forms.ComboBox cboBoxMotif;
         private System.Windows.Forms.Label lbMotif;
         private System.Windows.Forms.DateTimePicker dateTimeFin;

@@ -11,12 +11,12 @@ namespace MediaTek.connexion
     public class ConnexionBDD
     {
         /// <summary>
-        /// Objet de connexion à la BDD à partir d'une chaîne de connexion
+        /// Objet de connexion à la base de données
         /// </summary>
         private MySqlConnection connection;
 
         /// <summary>
-        /// Constructeur privé pour créer la connexion à la BDD et l'ouvrir
+        /// Constructeur privé pour créer la connexion + l'ouvrir
         /// </summary>
         /// <param name="stringConnect">chaîne de connexion</param>
         private ConnexionBDD(string stringConnect)
@@ -34,12 +34,12 @@ namespace MediaTek.connexion
         }
 
         /// <summary>
-        /// Seule instance de la classe
+        ///Instance de la classe
         /// </summary>
         private static ConnexionBDD instance = null;
 
         /// <summary>
-        /// Crée une instance unique de la classe
+        /// Création d'une instance unique de la classe
         /// </summary>
         /// <param name="stringConnect">chaine de connexion</param>
         /// <returns>instance unique de la classe</returns>
@@ -58,7 +58,7 @@ namespace MediaTek.connexion
         private MySqlCommand command;
 
         /// <summary>
-        /// Exécuter une requête autre que "SELECT"
+        /// Pour exécuter une requête autre que "SELECT"
         /// </summary>
         /// <param name="stringQuery">requête autre que "SELECT"</param>
         /// <param name="parameters"></param>

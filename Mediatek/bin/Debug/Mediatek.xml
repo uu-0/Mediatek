@@ -11,23 +11,23 @@
         </member>
         <member name="F:MediaTek.connexion.ConnexionBDD.connection">
             <summary>
-            Objet de connexion à la BDD à partir d'une chaîne de connexion
+            Objet de connexion à la base de données
             </summary>
         </member>
         <member name="M:MediaTek.connexion.ConnexionBDD.#ctor(System.String)">
             <summary>
-            Constructeur privé pour créer la connexion à la BDD et l'ouvrir
+            Constructeur privé pour créer la connexion + l'ouvrir
             </summary>
             <param name="stringConnect">chaîne de connexion</param>
         </member>
         <member name="F:MediaTek.connexion.ConnexionBDD.instance">
-            <summary>
-            Seule instance de la classe
-            </summary>
+             <summary>
+            Instance de la classe
+             </summary>
         </member>
         <member name="M:MediaTek.connexion.ConnexionBDD.GetInstance(System.String)">
             <summary>
-            Crée une instance unique de la classe
+            Création d'une instance unique de la classe
             </summary>
             <param name="stringConnect">chaine de connexion</param>
             <returns>instance unique de la classe</returns>
@@ -39,7 +39,7 @@
         </member>
         <member name="M:MediaTek.connexion.ConnexionBDD.ReqUpdate(System.String,System.Collections.Generic.Dictionary{System.String,System.Object})">
             <summary>
-            Exécuter une requête autre que "SELECT"
+            Pour exécuter une requête autre que "SELECT"
             </summary>
             <param name="stringQuery">requête autre que "SELECT"</param>
             <param name="parameters"></param>
@@ -578,7 +578,7 @@
         </member>
         <member name="M:Mediatek.frmGestionPersonnel.RemplirComboBoxService">
             <summary>
-            Rempli la comboBox ServiceS
+            Rempli la comboBox Service
             </summary>
         </member>
         <member name="M:Mediatek.frmGestionPersonnel.RemplirListeAbsence">

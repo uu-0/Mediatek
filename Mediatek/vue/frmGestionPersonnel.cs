@@ -436,19 +436,6 @@ namespace Mediatek
         }
 
         /// <summary>
-        /// MAJ des données de la BD
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnRef_Click(object sender, EventArgs e)
-        {
-            RemplirListePersonnel();
-            RemplirComboBoxService();
-            RemplirListeAbsence();
-            RemplirComboBoxMotifs();
-        }
-
-        /// <summary>
         /// Vide les champs
         /// </summary>
         /// <param name="sender"></param>
