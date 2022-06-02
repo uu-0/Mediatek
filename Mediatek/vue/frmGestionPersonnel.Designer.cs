@@ -280,7 +280,7 @@ namespace Mediatek
             this.lstPersonnel.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.lstPersonnel.Location = new System.Drawing.Point(410, 72);
             this.lstPersonnel.Name = "lstPersonnel";
-            this.lstPersonnel.Size = new System.Drawing.Size(538, 498);
+            this.lstPersonnel.Size = new System.Drawing.Size(516, 498);
             this.lstPersonnel.TabIndex = 19;
             this.lstPersonnel.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.lstPersonnel_CellEnter);
             // 
@@ -417,7 +417,7 @@ namespace Mediatek
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 588);
+            this.ClientSize = new System.Drawing.Size(947, 588);
             this.Controls.Add(this.lstPersonnel);
             this.Controls.Add(this.grpBtn);
             this.Controls.Add(this.grpSaisie);
@@ -426,6 +426,7 @@ namespace Mediatek
             this.Controls.Add(this.panel3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmGestionPersonnel";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gestion du Personnel";
             this.grpBtn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.lstPersonnel)).EndInit();
